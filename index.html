@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Ellen Estallo Demo for Saint James The Less Church</title>
+		<link
+		href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+		rel="stylesheet"
+	    />
+	</head>
+	<style>
+		body,html {
+			margin: 0; padding: 0;
+			height: 100%;
+			/* overflow: hidden; */
+
+			/*  */
+			display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+
+		}
+
+		.background-image {
+			background-image: url("church2.jpg");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+			position: absolute;
+			inset: 0; /* to stretch to all 4 edges */
+			z-index: -1;
+		}
+
+		main {flex: 1;}
+
+		.logo {
+			position: absolute;
+			margin: 30px 0 0 100px; /* top, right, bottom, left (clockwise) */
+			height: 70px;
+			z-index: 2;
+		}
+
+		.navbar {
+			display: flex; justify-content: flex-end; align-items: center;
+			/* background: linear-gradient(to right, rgba(36, 93, 162, 0) 0%, rgba(36, 93, 162, 0.55) 100%); */
+			z-index: 100;
+		}
+
+		.nav-links {
+    			margin: 0 100px 0 0; /* top, right, bottom, left */
+			padding: 25px;
+			display: flex;
+		}
+
+		.nav-links li {
+			margin-left: 80px;
+			padding: 40px, 0; /* top, bottom are 20px, left and right are 0 */
+			font: 24px "Avenir Book", sans-serif; font-weight: bolder;
+			display: inline;
+			}
+
+		.nav-links a {
+			color: white;
+			text-decoration: none;
+			}
+		
+		.nav-links a:hover {
+			color: yellow;
+			text-decoration-line: underline;}
+
+		/* HOVERING EXPERIMENT BELOW } */
+		/* a {position: relative;}
+		.nav-links a::before, .screen-links a::before {
+			content: '';
+			position: absolute;
+			top: 40px;  
+			width: 100%; height: 2px;
+			background-color: white;
+			transform-origin: right; transform: scaleX(0);
+			transition: transform .3s ease-in-out;}	
+		.nav-links a:hover::before,.screen-links a:hover::before {
+			transform-origin: left;
+			transform: scaleX(1);}	
+
+/*  
+		/* FOR MOBILE (max-width: 480px) & TABLETS (ipadMini) (max-width 768) */
+
+		.hamburger, .screen {display: none;}
+
+	 	/* .close-button {
+            	position: absolute; top: 20px;right: 20px;
+            	font-size: 30px; color: white;
+            	cursor: pointer;
+            	z-index: 100; display: none;  
+		} */
+
+		.churchNameBox { position: absolute; left: 5%; top: 18%; }
+
+		.text-james-less {
+			font: 120px "Bebas Neue", sans-serif; 
+			color: white; 
+			line-height: 0.9;
+		}
+
+		.text-roman {
+			font: 36px "Avenir Book", sans-serif;
+			padding-left: 5px;
+			color: white;
+			line-height: 0.8;
+		}
+		
+		.footer {			
+			background-color: rgba(0, 0, 0, 0.6);
+			bottom: 0; width: 100%; padding: 1em 0;
+			display: flex;
+			justify-content: space-between; align-items: center;
+
+			z-index: 1;
+
+			font: bolder 16px "Avenir Book", sans-serif;
+			color: white; text-decoration: none;
+		}
+		.church-address {margin-left: 50px;}
+
+		@media  (max-width: 768px){
+			.logo {
+				position: absolute; margin: 36px 0 0 40px; 
+				/* clockwise:  top is 36, right & bottom is 0, left is 40 */
+				height: 36px;
+				z-index: 2;
+			}
+			.hamburger {
+				position: absolute; top: 20px; right: 40px; 
+				font-size: 40px; color: rgb(219, 227, 247); 
+				cursor: pointer; 
+				display: block;}
+
+			.navbar {display: none;}
+
+			.text-james-less {
+				font: 60px "Bebas Neue", sans-serif; 
+				color: white; 
+				line-height: 0.9;
+			}
+
+			.text-roman {
+				font: 16px "Avenir Book", sans-serif;
+				padding-left: 5px;
+				color: white;
+				line-height: 0.8;
+	
+			}
+			.screen {
+				position: absolute; top: 0; left: -100%;
+				width: 70%; height: 100vh;
+				padding: 0;
+				background-color: rgba(41, 101, 172, 0.88); 
+				display: flex; flex-direction: column;  
+				transition: left 1.5s ease;}
+
+			.screen-links {
+				margin: 320px 0 0 40px; 
+				/* clockwise:  top is 140; right & bottom, 0; left is 40 */
+				padding: 0;
+				list-style-type: none;}
+
+			.screen-links li {
+				margin-bottom: 28px;
+				font: 32px "Avenir Book", sans-serif;
+				color: white;}
+
+			.screen-links a {
+				text-decoration: none;
+				color: inherit;} /* Inherit li color */
+
+			.screen-links a:hover  {color: yellow;}
+
+			.active {left: 0;}
+
+			.church-address {font-size: 12px;}
+		}
+	
+	</style>
+
+	<body>
+		<div class="background-image"></div>
+		
+		<main>
+		<a href="#" onclick="alert('HOME PAGE');">
+			<img	src="icon1.png" alt="Logo" class="logo" />
+
+		<nav class="navbar">
+			<ul class="nav-links">
+				<li><a href="#welcome">Welcome</a></li>
+				<li><a href="#worship">Worship</a></li>
+				<li><a href="#connect">Connect</a></li>
+				<li><a href="#translate">Translate</a></li>
+				<li><a href="#give">Give</a></li>
+			</ul>
+		</nav>	
+		
+		<div class="hamburger" onclick="toggleMenu()">&#9776;</div>	
+		<!-- <div class="close-button" id="close-button" onclick="toggleMenu()">
+			&times;</div> -->
+		
+		<div class="screen" id="screen">
+			<ul class="screen-links">
+				<li><a href="#welcome">Welcome</a></l>
+				<li><a href="#worship">Worship</a></li>
+				<li><a href="#connect">Connect</a></li>
+				<li><a href="#translate">Translate</a></li>
+				<li><a href="#give">Give</a></li>
+			</ul>
+		</div>
+
+		<div class="churchNameBox" id="churchNameBox"> 
+			<div class="text-james-less">ST. JAMES</div> 
+			<div class="text-james-less">THE LESS</div>
+			<div class="text-roman">Roman Catholic Church</div> 
+		</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="church-address">36 Lincoln Ave., Jamesburg, NJ | 732-521-0100</div>
+			<!-- <div class="masstimes-and-directions-link">
+			  	<a href="#masstimes">Mass Times & Directions</a>
+			</div> -->
+		</footer>
+	
+	</body>
+	<script>
+	
+		function toggleMenu() {
+			const screen = document.getElementById("screen");
+			const hamburger = document.getElementById("hamburger");
+			// const churchNameBox = document.querySelector("churchNameBox");
+			// const closeButton = document.getElementById("close-button");
+			screen.classList.toggle("active");
+			hamburger.style.display = screen.classList.contains("active")
+				? "none" : "block";
+			churchNameBox.style.display = screen.classList.contains("active") ? "none" : "block";
+			// closeButton.style.display = screen.classList.contains("active")
+			// 	? "block": "none";}
+		}
+		</script>
+</html>
+
