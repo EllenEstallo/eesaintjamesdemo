@@ -5,11 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" 
 			rel="stylesheet"/>
-		<!-- <link rel="stylesheet" href="masstimes-overlay.css"> -->
 		<title>Ellen Estallo Demo for Saint James The Less Church</title>
-		
-
-		
+	
 	</head>
 	<style>
 		body,html {
@@ -35,34 +32,53 @@
 
 		.logo {
 			position: absolute;
-			margin: 30px 0 0 100px; /* top, right, bottom, left (clockwise) */
-			height: 70px;
+			margin: 13px 0 0 100px; /* top, right, bottom, left (clockwise) */
+			height: 40px;
 			z-index: 2;
 		}
 
 		.navbar {
 			display: flex; justify-content: flex-end; align-items: center;
-			/* background: linear-gradient(to right, rgba(36, 93, 162, 0) 0%, rgba(36, 93, 162, 0.55) 100%); */
 			z-index: 100;
+			background-color: #f9f7e3;;
+			border-bottom:  1px solid #65360d;
 		}
 
 		.nav-links {
     			margin: 0 100px 0 0; /* top, right, bottom, left */
-			padding: 25px;
+			padding: 20px;
 			display: flex;
 		}
 
 		.nav-links li {
 			margin-left: 80px;
 			padding: 40px, 0; /* top, bottom are 20px, left and right are 0 */
-			font: 24px "Avenir Book", sans-serif; font-weight: bolder;
+			font: 18px "Avenir Book", sans-serif; font-weight: bolder;
 			display: inline;
 			}
 
-		.nav-links a { color: #f9f7e3; text-decoration: none;}
+		.nav-links a { color: #65360d;text-decoration: none;}
 		
-		.nav-links a:hover { color: #F2E209; text-decoration-line: underline;}
+		.nav-links a:hover { color: #65360d; text-decoration-line: underline;}
 
+		.dropdown {
+            	position: relative;
+            	display: inline-block;
+			font: 14px "Avenir Book", sans-serif; font-weight: bolder;
+			
+		}
+		.dropdown-content {
+			padding-top: 30px; padding-left: 30px; padding-bottom: 30px;
+			display: none;
+			
+			position: absolute;
+			background-color: #f9f7e3b9;;
+			min-width: 300px;		
+		}
+		.dropdown-content a { display: block; }
+		
+		.dropdown:hover .dropdown-content { display: block; }
+       
 		/* HOVERING EXPERIMENT BELOW } */
 		/* a {position: relative;}
 		.nav-links a::before, .screen-links a::before {
@@ -82,18 +98,14 @@
 
 		.hamburger, .screen {display: none;}
 
-	 	/* .close-button {
-            	position: absolute; top: 20px;right: 20px;
+	 	/* .close-button { position: absolute; top: 20px;right: 20px;
             	font-size: 30px; color: white;
-            	cursor: pointer;
-            	z-index: 100; display: none;  
-		} */
+            	cursor: pointer; z-index: 100; display: none;  } */
 
-		.churchNameBox { position: absolute; left: 5%; top: 18%; }
+		.churchNameBox { position: absolute; left: 6%; top: 12%; }
 
 		.text-james-less {
-			font: 120px "Bebas Neue", sans-serif; 
-			/* color: #FEFBD7; */
+			font: 140px "Bebas Neue", sans-serif; 
 			color: #f9f7e3;
 			line-height: 0.9;
 		}
@@ -105,30 +117,31 @@
 			line-height: 0.8;
 		}
 		
-		.footer {			
-			
-			/* background-color: rgba(47, 79, 79, 0.4); */
-			
-			bottom: 0; width: 100%; padding: 1.5em 0;
+		.footer {				
+			bottom: 0; width: 100%; padding: 1em 0;
 			display: flex;
 			justify-content: space-between; align-items: center;
 
 			z-index: 1;
 
-			font: bolder 20px "Avenir Book", sans-serif;
-			color: #f9f7e3; text-decoration: none;
+			font: bolder 14px "Avenir Book", sans-serif;
+			
+			text-decoration: none;
+			color: #f9f7e3;
+			background-color: #65360d8a;
 		}
 			
 		.footer a {text-decoration: none;}
 
 		.church-address {
-			margin-left: 50px;
+			font: bolder 18px "Avenir Book", sans-serif;
+			margin-left: 70px;
 			display: block;
 		}
 		.masstimes-and-directions-link {margin-left: 1em;}
 
 		.masstimes-and-directions-link a {
-			color: #C0032B;
+			color: #65360d;
 			padding: 8px 16px; /* 8 for top & bottom & 14 for left & right */
 			margin-right: 60px;
 			border-radius: 10px;
@@ -140,8 +153,8 @@
 		.masstimes-and-directions-link a:hover {
 			background-color:#C0032B;
 			color: #f9f7e3;
+			/* background-color: #65360d; */
 		}
-		/*  */
 
 		.overlay {
 				display: none;
@@ -150,7 +163,8 @@
 				left: 0;
 				width: 100%;
 				height: 100%;
-				background-color: #59a2f07e;
+				background-color:   #f9f7e374;
+				
 
 				justify-content: center;
 				align-items: center;
@@ -164,7 +178,8 @@
 				position: relative;
 
 				height: 70px;
-				background-color: darkslategrey;
+				/* background-color: darkslategrey; */
+				background-color:  #65360d;
 				color: #f9f7e3;
 				font: 32px "Avenir Book", sans-serif;
 
@@ -175,7 +190,7 @@
 			}
 			.divider {
 				height: 3px;
-				background-color: #c0032b;
+				background-color: #65360d;
 			}
 			.middle {
 				height: 50px;
@@ -234,23 +249,20 @@
 		
 		@media  (max-width: 430px){
 			.logo {
-				position: absolute; margin: 36px 0 0 40px; 
-				/* clockwise:  top is 36, right & bottom is 0, left is 40 */
-				height: 36px;
-				z-index: 2;
+				display: none;
 			}
 			.hamburger {
 				position: absolute; top: 20px; right: 40px; 
-				font-size: 40px; color: rgb(219, 227, 247); 
+				font-size: 50px; color: rgb(219, 227, 247); 
 				cursor: pointer; 
 				display: block;}
 
 			.navbar {display: none;}
-
+			.churchNameBox { position: absolute; left: 5%; top: 5%; }
 			.text-james-less {
 				font: 60px "Bebas Neue", sans-serif; 
 				color: #f9f7e3;
-				line-height: 0.9;
+				line-height: 0.9;			
 			}
 
 			.text-roman {
@@ -287,7 +299,7 @@
 
 			.active {left: 0;}
 
-			.church-address {font-size: 12px;}
+			.church-address {display: none;}
 		}
 	
 	</style>
@@ -300,12 +312,79 @@
 				<img	src="icon1.png" alt="Logo" class="logo" />
 
 			<nav class="navbar">
+
 				<ul class="nav-links">
-					<li><a href="#welcome">Welcome</a></li>
-					<li><a href="#worship">Worship</a></li>
-					<li><a href="#connect">Connect</a></li>
-					<li><a href="#translate">Translate</a></li>
-					<li><a href="#give">Give</a></li>
+					<li class="dropdown">
+						<a href="welcome.html">Welcome</a>
+						<div class="dropdown-content">
+							<a href="welcome.html">Our Parish Mission</a>
+							<a href="welcome.html#parish-leadership">Our Servant Leaders</a>
+							<a href="welcome.html#parish-membership">Parish Membership</a>
+							<a href="welcome.html#contact">Contact Us</a>
+						</div>
+					</li>
+
+					<li class="dropdown">
+						<a href="#">Mass Times</a>
+						<div class="dropdown-content">
+							<a href="worship.html">Mass Times</a>
+							<a href="worship.html#prayer-and-reconciliation-box">Prayer & Confession</a>
+							<a href="worship.html#seasonal-box">Our Holy Week Schedule</a>
+							<a href="worship.html#seasonal-box">Our Easter Schedule</a>
+						</div>
+					</li>
+
+					<li class="dropdown">
+						<a href="#">Our Ministries</a>
+					</li>
+
+					<li class="dropdown">
+						<a href="#">CCD</a>
+					</li>
+
+					<li class="dropdown">
+						<a href="#">Give</a>
+					</li>
+
+					
+					<!-- <li class="dropdown">
+						<a href="connect.html">Connect</a>
+						<div class="dropdown-content"> 
+							<a href="connect.html">Be one of us.</a>
+							<!- <div class="dropdown-subcontent"> -->
+							<!-- <a href="connect.html">Parish Membership</a> -->
+							<!-- </div> --
+							<a href="connect-learn.html">Learn with us.</a> 
+	  						<!- <div class="dropdown-subcontent"> -->
+								<!-- <a href="connect-learn.html">Baptism</a>
+								<a href="connect-learn.html#marriage-box">Marriage</a>
+								<a href="connect-learn.html#homebound-box">Communion For The Homebound</a>
+								<a href="connect-learn.html#anointing-box">Anointing of the Sick</a>
+								<a href="connect-learn.html#funeral-box">Funeral Planning</a>
+							</div> --
+							<a href="ccd.html">Grow with us.</a>
+								<!- <div class="dropdown-subcontent">
+							  		<a href="ccd.html">Religious Education (CCD)</a>
+								</div> -->
+						<!-- </div> -->
+					<!-- </li>  -->
+
+					<!-- <li class="dropdown">
+						<a href="translate.html">Translate</a>
+					</li> -->
+
+					<!-- <li class="dropdown">
+						<a href="give.html">Give</a>
+						<div class="dropdown-content">
+							<a href="give.html">Stewardship.</a>
+						    	<div class="dropdown-subcontent">
+							  <a href="give.html#time">Time</a>
+							  <a href="give.html#talent">Talent</a>
+							  <a href="give.html#treasure">Treasure</a>
+						    	</div>
+						</div>
+					</li> -->
+					<!-- </li>  -->
 				</ul>
 			</nav>	
 			
@@ -333,7 +412,6 @@
 
 			<div id="overlay" class="overlay">
 				<div class="box">
-					<div class="divider"></div>
 	
 					<div class="top">
 						MASS TIMES AND DIRECTIONS
@@ -420,104 +498,16 @@
 					<div class="divider"></div>
 				</div>
 			</div>
-
-			<!--  -->
-
-			<!-- SECTION FOR MASSTIMES-OVERLAY TRIGGERED BY LINK IN FOOTER  -->
-			<!-- <section id="masstimes">
-				 <div class="container1">MASS TIMES & DIRECTIONS</div> -->
-				 <!-- <div class="container2">   -->
-					<!-- <div class="box21">
-						<div class="box2text">MASS</div>
-					</div>  
-					<div class="box22">
-						<div class="box2text">CONFESSION, etc.</div>
-					</div>
-					<div class="box23">
-						<div class="box2text">MAP</div>
-					</div> 
-				</div> -->
-				<!-- <div class="container3">
-					<div class="box31">
-						<ul>
-							<li>Sunday Mass Schedule</li>
-							<ul>
-								<li>Saturday at 4:00 pm</li>
-								<li>Sunday:</li>
-								<ul>
-									<li>8:00 am</li>
-									<li>10:00 am</li>
-									<li>2:00 pm in Spanish</li>
-									<li>5:00 pm</li>
-								</ul>
-							</ul>
-							<br />
-							<li>Daily  Mass Schedule</li>
-							<ul>
-								<li>Monday-Friday 8:30 am</li>
-							</ul> 
-						</ul> 
-					</div>
-					<div class="box32">
-						<ul>
-							<li>Confession</li>
-							<ul>
-								<li>Thursday at 4:30 pm</li>
-								<li>Saturday at 3:00 pm</li>
-							</ul>
-							<br />
-							<li>Eucharistic Adoration</li>
-							<ul>
-								<li>Thursday at 5:00pm</li>
-							</ul>
-							<br />
-							<li>Recitation of The Most Holy Rosary</li>
-							<ul>
-								<li>
-									before all masses on the first weekend
-									<div class="second-line">of the month</div>
-								</li>
-								<li>Sunday at 1:00 pm in Spanish</li>
-							</ul>
-							<br />
-							<li>Prayer for Divine Mercy</li>
-							<ul>
-								<li>
-									before the 10:00 am Sunday mass on
-									<div class="second-line">the second weekend of the month</div>
-								</li>
-							</ul>
-						</ul>
-					</div>
-					<div class="box33">
-				<iframe
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3040.4135216794502!2d-74.4425578240575!3d40.35535237144947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3daef7716a46f%3A0x96662c3ea029c5c6!2s36%20Lincoln%20Ave%2C%20Jamesburg%2C%20NJ%2008831!5e0!3m2!1sen!2sus!4v1736916892073!5m2!1sen!2sus"
-				width="450"
-				height="420"
-				style="border: 0"
-				allowfullscreen=""
-				loading="lazy"
-				referrerpolicy="no-referrer-when-downgrade"
-				></iframe> 
-					</div>
-				</div>  -->
- 
-				 <!-- <div class="container4"> 
-					<button onclick="closeOverlay()">CLOSE</button>
-				</div>  -->
-			<!-- </section>  -->
-
-
 			
 		</main>
 
 		<footer class="footer">
 			<div class="church-address">36 Lincoln Ave., Jamesburg, NJ | 732-521-0100</div>
 			<!-- <div class="masstimes-and-directions-link">
-				<a href="#masstimes" id="openOverlay">Mass Times & Directions</a>
+				<a href="#masstimes" id="openOverlay">Mass Times and Directions</a>
 			</div> -->
 			<div class="masstimes-and-directions-link">
-				<a href="#masstimes" id="openOverlay">Mass Times and Directions</a>
+				<a href="#masstimes" id="openOverlay">Translate</a>
 			</div>
 		</footer>
 	
@@ -537,40 +527,13 @@
 		}
 
 	
-		// const openOverlay = document.getElementById("openOverlay");
-		// 	const overlay = document.getElementById("overlay");
-		// 	const closeOverlay = document.getElementById("closeOverlay");
-
-		// 	openOverlay.onclick = function (event) {
-		// 		event.preventDefault();
-		// 		overlay.style.display = "flex"; // Show the overlay
-		// 	};
-
-			// closeOverlay.onclick = function () {
-			// 	overlay.style.display = "none"; // Hide the overlay
-			// };
-
-			// // Close overlay when clicking outside of the overlay content
-			// overlay.onclick = function (event) {
-			// 	if (event.target === overlay) {
-			// 		overlay.style.display = "none";
-			// 	}
-			// };
-
-// 
-
-document.getElementById("openOverlay").onclick = function () {
+		document.getElementById("openOverlay").onclick = function () {
 				document.getElementById("overlay").style.display = "flex";
 			};
 
-			document.getElementById("closeOverlay").onclick = function () {
+		document.getElementById("closeOverlay").onclick = function () {
 				document.getElementById("overlay").style.display = "none";
-			};
-
-// 
-
-
-			
+			};			
 	</script>
 </html>
 
