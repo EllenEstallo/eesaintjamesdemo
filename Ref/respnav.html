@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+                  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF; /* Blue background */
+    padding: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white; /* White text for better contrast */
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: white; /* White color for hamburger icon */
+    cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #0056b3; /* Darker blue background for mobile */
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        color: white; /* Keep text white on mobile */
+        padding: 10px 0; /* Adding space around text for better clickability */
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+            </style>
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="hamburger" onclick="toggleMenu()">☰</div>
+			<ul class="nav-links" id="navLinks">
+				<li class="dropdown">
+					<a href="aboutus.html">About Us</a>
+				</li>
+				<li class="dropdown">
+					<a href="masstimes.html">Mass Times</a>
+				</li>
+			</ul>
+		</nav>
+	</body>
+	<script>
+		function toggleMenu() {
+			const navLinks = document.getElementById("navLinks");
+			navLinks.classList.toggle("active");
+		}
+	</script>
+</html>
