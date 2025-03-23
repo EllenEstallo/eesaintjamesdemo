@@ -17,8 +17,8 @@
 	margin: 0 100px 0 0; /* top, right, bottom, left */
 	padding: 20px;
 	display: flex;
-
 	color: black;
+	/* color: brown; */
 }
 
 .nav-links li {
