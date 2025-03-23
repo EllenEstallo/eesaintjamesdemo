@@ -7,7 +7,8 @@
 			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./navbar-home.css" />
+		<link rel="stylesheet" href="./navbar.css" />
+		<!-- common navbar.css for all pages -->
 		<title>Ellen Estallo Demo for Saint James The Less Church</title>
 	</head>
 	<style>
@@ -78,82 +79,43 @@
 		     	
         
 		@media (max-width: 768px) {
-			.logo {
+			.logo, .navbar, .footer {
 				display: none;
-			}
+			} 
 
 			.hamburger {
-				position: absolute;
-				top: 20px;
-				right: 40px;
-				font-size: 50px;
-				color: rgb(219, 227, 247);
-				cursor: pointer;
 				display: block;
 			}
 
-			.navbar {
-				display: none;
-			}
 			.churchNameBox {
 				position: absolute;
 				left: 5%;
 				top: 5%;
 			}
+
 			.text-james-less {
 				font: 60px "Bebas Neue", sans-serif;
 				color: #f9f7e3;
 				line-height: 1;
 			}
+
 			.text-roman {
 				font: 16px "Avenir Book", sans-serif;
 				padding-left: 5px;
 				color: #f9f7e3;
 				line-height: 1;
 			}
-			.screen {
-				position: absolute;
-				top: 0;
-				left: -100%;
-				width: 70%;
-				height: 100vh;
-				padding: 0;
-				background-color: rgba(41, 101, 172, 0.88);
-				/* background-color: #f9f7e3b3; */
-				display: flex;
-				flex-direction: column;
-				transition: left 1.5s ease;
-			}
-			.screen-links {
-				margin: 320px 0 0 40px;
-				/* clockwise:  top is 140; right & bottom, 0; left is 40 */
-				padding: 0;
-				list-style-type: none;
-			}
 
-			.screen-links li {
-				margin-bottom: 28px;
-				font: 32px "Avenir Book", sans-serif;
-				/* color: #65360d;} */
-				color: #f9f7e3;
-			}
-			/* color: white;} */
-
-			.screen-links a {
-				text-decoration: none;
-				color: inherit;
-			} /* Inherit li color */
-
-			.screen-links a:hover {
-				color: yellow;
-			}
-
+			.screen,
+			.screen-links,
+			.screen-links li,
+			.screen-links a,
+			.screen-links a:hover,
 			.active {
-				left: 0;
+				display: block; 
 			}
+		} 
 
-			
-		}
 	</style>
 
 	<body>
@@ -162,8 +124,9 @@
 		<main>
 			<a href="index.html">
 				<img src="icon1.png" alt="Logo" class="logo" />
-			</a>
+			</a> 
 
+			<!-- Q2 How can I use <nav> for mobile CSS? -->
 			<nav class="navbar">
 				<ul class="nav-links">
 					<li class="dropdown">
@@ -251,9 +214,12 @@
 			</nav>
 
 			<div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+			<!-- Q3 can't make the x button work for the hamburger -->
 			<!-- <div class="close-button" id="close-button" onclick="toggleMenu()">
 				&times;</div> -->
 
+			<!-- Q4 this may not be necessary if <nav> as flex-direction column 
+				can be used for mobile too  -->
 			<div class="screen" id="screen">
 				<ul class="screen-links">
 						<li><a href="#welcome">About Us</a></l>
@@ -278,6 +244,7 @@
 		</footer>
 	</body>
 	<script>
+
 		function toggleMenu() {
 			const screen = document.getElementById("screen");
 			const hamburger = document.getElementById("hamburger");
@@ -295,12 +262,5 @@
 		// const navLinks = document.getElementById("navLinks");
 		// navLinks.classList.toggle("active");
 
-		// document.getElementById("openOverlay").onclick = function () {
-		// 		document.getElementById("overlay").style.display = "flex";
-		// 	};
-
-		// document.getElementById("closeOverlay").onclick = function () {
-		// 		document.getElementById("overlay").style.display = "none";
-		// 	};
 	</script>
 </html>
