@@ -1,6 +1,6 @@
 .logo {
 	position: absolute;
-	margin: 13px 0 0 100px; /* top, right, bottom, left (clockwise) */
+	margin: 13px 0 0 100px;
 	height: 40px;
 	z-index: 2;
 }
@@ -17,22 +17,21 @@
 	margin: 0 100px 0 0;
 	padding: 20px;
 	display: flex;
-	/* color: white; */
 }
 
 .nav-links li {
 	margin-left: 80px;
 	padding: 40px, 0; /* top, bottom are 20px, left and right are 0 */
-	font: 18px "Avenir Book", sans-serif;
-	font-weight: bolder;
 	display: inline;
-	/* color: white; */
 }
 
 .nav-links a {
 	text-decoration: none;
+	font: 18px "Avenir Book", sans-serif;
+	font-weight: bolder;
+	color: #65360d;
 }
-
+/* Q:  ANY HOVER SUGGESTION?  */
 .nav-links a:hover {
 	text-decoration-line: underline;
 }
@@ -50,7 +49,7 @@
 	display: none;
 
 	position: absolute;
-	background-color: #f9f7e3b9;
+	/* background-color: #f9f7e3b9; */
 	min-width: 320px;
 }
 .dropdown-content a {
@@ -66,8 +65,7 @@
 	top: 20px;
 	right: 40px;
 	font-size: 50px;
-	/* color: rgb(219, 227, 247); */
-	color: red;
+	color: #f9f7e3;
 	cursor: pointer;
 	display: none;
 }
@@ -93,12 +91,11 @@
 
 .screen-links li {
 	margin-bottom: 28px;
-	font: 32px "Avenir Book", sans-serif;
-	color: #f9f7e3;
 }
 
 .screen-links a {
 	text-decoration: none;
+	font: 32px "Avenir Book", sans-serif;
 	color: #f9f7e3;
 }
 .screen-links a:hover {
