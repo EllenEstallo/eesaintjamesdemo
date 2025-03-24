@@ -61,7 +61,8 @@
 }
 
 .screen-links {
-	margin: 320px 0 0 40px;
+	/* margin: 320px 0 0 40px;  */
+	margin-top: 230px;
 	list-style-type: none;
 }
 
