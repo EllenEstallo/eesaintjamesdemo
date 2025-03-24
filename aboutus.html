@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" 
 			rel="stylesheet"/>
-		<link rel="stylesheet" href="./navbar-home.css" />
+		<link rel="stylesheet" href="./navbar.css" />
 		<title>Ellen Estallo Demo for Saint James The Less Church</title>
 	
 	</head>
@@ -20,23 +20,37 @@
 
 			background-color:  #f9f7e3;}
 
-		main {flex: 1;}
+		main {
+			flex: 1;
+		}
 
-		/* .churchNameBox { position: absolute; left: 6%; top: 12%; } */
-
-		.header-box {
+		.header-box {width: 100%;
 			display: flex;
-			width: 100%;}
-        
-		.image-box {width: 40%;}
+			flex-direction: row;}
 
-		.churchNameBox {
+		.image-box {width: 40%;
+			padding-top: 100px;
+			padding-left: 100px;
+			padding-right: 0;
+			padding-bottom: 100px;
+			box-sizing: border-box; /* Ensures padding is included in width */
+			text-align: right; /* Right justify the content */}
+
+		.text-box {width: 60%;
+			padding-top: 100px;
+			padding-left: 100px;
+			padding-right: 100px;
+			padding-bottom: 100px;
+            	box-sizing: border-box; /* Ensures padding is included in width */
+            	text-align: left; /}
+
+		/* .churchNameBox {
 			padding-top: 60px;
 			padding-left: 100px;
 			display:flex;
 			flex-direction: column;
 			align-items: flex-start
-		}
+		} */
 		.text-james-less {
 			font: 120px "Bebas Neue", sans-serif; 
 			color:  #C0032B;
@@ -51,7 +65,7 @@
 			line-height: 0.8;
 		}
         
-		.text-box {width: 60%;}
+		/* .text-box {width: 60%;} */
 	  
 		.tagline {font-family: "Avenir Book", sans-serif;
   			font-weight: bolder;
@@ -65,136 +79,102 @@
 			font-weight: bolder;
 			padding-right: 90px}
 		
-		.footer {				
-			bottom: 0; width: 100%; padding: 1em 0;
-			display: flex;
-			justify-content: space-between; align-items: center;
-
-			z-index: 1;
-
-			font: bolder 14px "Avenir Book", sans-serif;
+		.footer {
+			bottom: 0;	
+			text-align: right; 
+			/* background-color:  #65360d; */
+			background-color: #f9f7e3;
 			
-			text-decoration: none;
-			color: #f9f7e3;
-			background-color: #65360db2;
-		}
-			
-		.footer a {text-decoration: none;}
-
+				
+		}	
 		.church-address {
-			font: bolder 18px "Avenir Book", sans-serif;
-			margin-left: 70px;
-			display: block;
-		}
-		.masstimes-and-directions-link {margin-left: 1em;}
-
-		.masstimes-and-directions-link a {
 			color: #65360d;
-			padding: 8px 16px; /* 8 for top & bottom & 14 for left & right */
-			margin-right: 60px;
-			border-radius: 10px;
-			cursor: pointer;
-			background: #f9f7e3;
-			
-		}
+			font: 16px "Avenir Book", sans-serif;
+			padding: 10px;
+			margin-right: 30px;
 
-		.masstimes-and-directions-link a:hover {
-			background-color:#C0032B;
-			color: #f9f7e3;
+		}
 		
-		}
-	
-		@media  (max-width: 430px){
-			.logo {
+		@media (max-width: 768px) {
+			.logo, .navbar, .footer {
 				display: none;
-			}
-			.hamburger {
-				position: absolute; top: 20px; right: 40px; 
-				font-size: 50px; color: rgb(219, 227, 247); 
-				cursor: pointer; 
-				display: block;}
+			} 
 
-			.navbar {display: none;}
-			.churchNameBox { position: absolute; left: 5%; top: 5%; }
+			.hamburger {
+				display: block;
+			}
+
+			.churchNameBox {
+				position: absolute;
+				left: 5%;
+				top: 5%;
+			}
+
 			.text-james-less {
-				font: 60px "Bebas Neue", sans-serif; 
+				font: 60px "Bebas Neue", sans-serif;
 				color: #f9f7e3;
-				line-height: 0.9;			
+				line-height: 1;
 			}
 
 			.text-roman {
 				font: 16px "Avenir Book", sans-serif;
 				padding-left: 5px;
 				color: #f9f7e3;
-				line-height: 0.8;
-	
+				line-height: 1;
 			}
-			.screen {
-				position: absolute; top: 0; left: -100%;
-				width: 70%; height: 100vh;
-				padding: 0;
-				background-color: rgba(41, 101, 172, 0.88); 
-				display: flex; flex-direction: column;  
-				transition: left 1.5s ease;}
 
-			.screen-links {
-				margin: 320px 0 0 40px; 
-				/* clockwise:  top is 140; right & bottom, 0; left is 40 */
-				padding: 0;
-				list-style-type: none;}
+			.screen,
+			.screen-links,
+			.screen-links li,
+			.screen-links a,
+			.screen-links a:hover,
+			.active {
+				display: block; 
+			}
 
-			.screen-links li {
-				margin-bottom: 28px;
-				font: 32px "Avenir Book", sans-serif;
-				color: white;}
+		
+		} 
+		@media (max-width: 768px) {
+				.header-box {
+					flex-direction: column; /* Stack elements vertically */
+				}
 
-			.screen-links a {
-				text-decoration: none;
-				color: inherit;} /* Inherit li color */
-
-			.screen-links a:hover  {color: yellow;}
-
-			.active {left: 0;}
-
-			.church-address {display: none;}
-		}
+				.text-box {
+					width: 100%; /* Make both boxes full width */
+					text-align: left; /* Left justify content in both boxes for better mobile view */
+				}
+			}
 			 
 </style>
-
-	<body>
-		<!-- <div class="background-image"></div> -->
+<body>
 		
-		<main>
-			<a href="index.html">
-				<img src="icon1.png" alt="Logo" class="logo" />
-			</a>
+	<main>
+		<a href="index.html"><img src="icon1.png" alt="Logo" class="logo" /></a>
 
-			<nav class="navbar">
-
-				
-				<ul class="nav-links">
-					<li class="dropdown">
-						<a href="aboutus.html">About Us</a>
-						<div class="dropdown-content">
+		<nav class="navbar">
+			<ul class="nav-links">
+				<li class="dropdown">
+					<a href="aboutus.html">About Us</a>
+					<!-- <div class="dropdown-content">
 							<a href="welcome.html">Our Parish Mission</a>
 							<a href="welcome.html#parish-leadership">Our Servant Leaders</a> 
 							<a href="welcome.html#parish-leadership">Our Ministries</a> 
 							<a href="welcome.html#parish-membership">Parish Membership</a>
 							<a href="welcome.html#contact">Contact Us</a>
-						</div>
-					</li>
+					</div> -->
+				</li>
 
-					<li class="dropdown">
-						<a href="#">Mass Times</a>
-						<div class="dropdown-content">
+				<!-- <li class="dropdown">
+					<a href="#">Mass Times</a>
+					<div class="dropdown-content">
 							<a href="worship.html">Mass Times</a>
 							<a href="worship.html#prayer-and-reconciliation-box">Prayer & Confession</a>
 							<a href="worship.html#seasonal-box">Our Holy Week Schedule</a>
 							<a href="worship.html#seasonal-box">Our Easter Schedule</a>
-						</div>
-					</li>
+					</div>
+				</li> -->
 
-					<li class="dropdown">
+				<!-- <li class="dropdown">
 						<a href="#">Sacramental Services</a>
 						<div class="dropdown-content">
 							
@@ -206,95 +186,77 @@
 							<a href="worship.html#seasonal-box">For the Homebound</a>
 							<a href="worship.html#seasonal-box">Funeral Planning</a>
 						</div>
-					</li>
+				</li> -->
 
-					<li class="dropdown">
+				<!-- <li class="dropdown">
 						<a href="#">CCD</a>
-					</li>
+				</li> -->
 
-					<li class="dropdown">
+				<!-- <li class="dropdown">
 						<a href="#">Give</a>
 						<div class="dropdown-content">
 							<a href="worship.html">Time</a>
 							<a href="worship.html#prayer-and-reconciliation-box">Talent</a>
 							<a href="worship.html#prayer-and-reconciliation-box">Treasure</a>
 						</div>
-					</li>
+				</li> -->
 
-					
-					<!-- <li class="dropdown">
-						<a href="connect-learn.html">Baptism</a>
-								<a href="connect-learn.html#marriage-box">Marriage</a>
-								<a href="connect-learn.html#homebound-box">Communion For The Homebound</a>
-								<a href="connect-learn.html#anointing-box">Anointing of the Sick</a>
-								<a href="connect-learn.html#funeral-box">Funeral Planning</a>
-							</div> --
-							<a href="ccd.html">Grow with us.</a>
-								<!- <div class="dropdown-subcontent">
-							  		<a href="ccd.html">Religious Education (CCD)</a>
-								</div> -->
-						<!-- </div> -->
-					<!-- </li>  -->
 
-					<!-- <li class="dropdown">
-						<a href="translate.html">Translate</a>
-					</li> -->
-
-					<!-- <li class="dropdown">
-						<a href="give.html">Give</a>
-						<div class="dropdown-content">
-							<a href="give.html">Stewardship.</a>
-						    	<div class="dropdown-subcontent">
-							  <a href="give.html#time">Time</a>
-							  <a href="give.html#talent">Talent</a>
-							  <a href="give.html#treasure">Treasure</a>
-						    	</div>
-						</div>
-					</li> -->
-					<!-- </li>  -->
-				</ul>
+			</ul>
 				
-			</nav>	
+		</nav>	
 			
-			<div class="hamburger" onclick="toggleMenu()">&#9776;</div>	
-			<!-- <div class="close-button" id="close-button" onclick="toggleMenu()">
+		<div class="hamburger" onclick="toggleMenu()">&#9776;</div>	
+		<!-- <div class="close-button" id="close-button" onclick="toggleMenu()">
 				&times;</div> -->
 			
-			<div class="screen" id="screen">
+		<div class="screen" id="screen">
 				<ul class="screen-links">
-					<li><a href="#welcome">About Us</a></l>
+					<li><a href="aboutus.html">About Us</a></l>
 					<li><a href="#worship">Mass Times</a></li>
 					<li><a href="#connect">Sacramental Services</a></li>
 					<li><a href="#translate">CCD</a></li>
 					<li><a href="#give">Give</a></li>
 				</ul>
-			</div>
+		</div>
 
 
-
-			<div class="header-box">
-				<div class="image-box">
-					<div class="churchNameBox" id="churchNameBox"> 
-						<div class="text-james-less">ST. JAMES</div> 
-						<div class="text-james-less">THE LESS</div>
-						<div class="text-roman">Roman Catholic Church</div> 
-					</div>
-				</div>
-				<div class="text-box">
-					<br><br><br>
+		<div class="content-container"> 
+			 <div class="header-box">
+				<div class="image-box"> 
+					<div class="text-james-less">ST. JAMES</div> 
+					<div class="text-james-less">THE LESS</div> 
+					<div class="text-roman">Roman Catholic Church</div> 
+				 </div> 
+				 <div class="text-box"> 
 					<div class="tagline">We foster love by example.</div>
-					<br><br>
-					<div class="text">As a parish community dedicated to proclaiming the Gospel of Jesus, we here at St. James are committed to further His mission. Through His Word, the Liturgy and the Sacraments, through music, evangelization and religious education, and through the intercession of our Blessed Virgin Mary, we deepen our knowledge, our understanding, and most especially our practice of our faith put to action.<p></p>Committing ourselves to serving the needs of our people for spiritual and social development, and economic growth, it is by design and intention that we foster love by example.<p></p>Join us in doing so. <p></p><p></p>
-				</div>
-			  </div>
+					<br>
+					<div class="text">As a parish community dedicated to proclaiming the Gospel of Jesus, we here at St. James are committed to further His mission. Through His Word, the Liturgy and the Sacraments, through music, evangelization and religious education, and through the intercession of our Blessed Virgin Mary, we deepen our knowledge, our understanding, and most especially our practice of our faith put to action.<p></p>Committing ourselves to serving the needs of our people for spiritual and social development, and economic growth, it is by design and intention that we foster love by example.<p></p>Join us in doing so. <p></p><p></p> 
+				 </div> 
+			</div>	
+		</div>
+		</div>
+		<div class="content-container"> 
+			<div class="header-box">
+			     <div class="image-box"> 
+				     <div class="text-james-less">ST. JAMES</div> 
+				</div> 
+				<div class="text-box"> 
+					<br><br><br>
+				     <div class="tagline">We foster love by example.</div>
+				     <br><br>
+				     <div class="text">As a parish community dedicated to proclaiming the Gospel of Jesus, we here at St. James are committed to further His mission. Through His Word, the Liturgy and the Sacraments, through music, evangelization and religious education, and through the intercession of our Blessed Virgin Mary, we deepen our knowledge, our understanding, and most especially our practice of our faith put to action.<p></p>Committing ourselves to serving the needs of our people for spiritual and social development, and economic growth, it is by design and intention that we foster love by example.<p></p>Join us in doing so. <p></p><p></p> 
+				</div> 
+		     </div>	
+	     </div>
+	     </div>
+		
 
 		</main>
 
 		
 		<footer class="footer">
 			<div class="church-address">36 Lincoln Ave., Jamesburg, NJ | 732-521-0100</div>
-			<div class="masstimes-and-directions-link">
-				<a href="#masstimes" id="openOverlay">Translate</a>
 			</div>
 		</footer>
 	
@@ -313,17 +275,7 @@
 			// 	? "block": "none";}
 		}
 
-		// function toggleNav() {
-            // const navLinks = document.getElementById("navLinks");
-            // navLinks.classList.toggle("active");
-        
-		// document.getElementById("openOverlay").onclick = function () {
-		// 		document.getElementById("overlay").style.display = "flex";
-		// 	};
-
-		// document.getElementById("closeOverlay").onclick = function () {
-		// 		document.getElementById("overlay").style.display = "none";
-		// 	};			
+					
 	</script>
 </html>
 

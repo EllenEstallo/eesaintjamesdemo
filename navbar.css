@@ -66,7 +66,8 @@
 	top: 20px;
 	right: 40px;
 	font-size: 50px;
-	color: rgb(219, 227, 247);
+	/* color: rgb(219, 227, 247); */
+	color: red;
 	cursor: pointer;
 	display: none;
 }
@@ -111,79 +112,21 @@
 	font-size: 30px; color: white;
 	cursor: pointer; z-index: 100; display: none;  } */
 
-/* @media (max-width: 768px) {
-	.logo {
-		display: none;
-	}
-	.hamburger {
-		position: absolute;
-		top: 20px;
-		right: 40px;
-		font-size: 50px;
-		color: rgb(219, 227, 247);
-		cursor: pointer;
-		display: block;
-	}
+.churchNameBox {
+	position: absolute;
+	left: 6%;
+	top: 12%;
+}
 
-	.navbar {
-		display: none;
-	}
+.text-james-less {
+	font: 140px "Bebas Neue", sans-serif;
+	color: #f9f7e3;
+	line-height: 0.9;
+}
 
-	.churchNameBox {
-		position: absolute;
-		left: 5%;
-		top: 5%;
-	}
-	.text-james-less {
-		font: 60px "Bebas Neue", sans-serif;
-		color: #f9f7e3;
-		line-height: 1;
-	}
-
-	.text-roman {
-		font: 16px "Avenir Book", sans-serif;
-		padding-left: 5px;
-		color: #f9f7e3;
-		line-height: 1;
-	}
-	.screen {
-		position: absolute;
-		top: 0;
-		left: -100%;
-		width: 75%;
-		height: 100vh;
-		padding: 0;
-		background-color: rgba(41, 101, 172, 0.88);
-		display: flex;
-		flex-direction: column;
-		transition: left 1.5s ease;
-	}
-
-	.screen-links {
-		margin: 320px 0 0 40px;
-		padding: 0;
-		list-style-type: none;
-	}
-
-	.screen-links li {
-		margin-bottom: 28px;
-		font: 32px "Avenir Book", sans-serif;
-		color: white;
-	}
-
-	.screen-links a {
-		text-decoration: none;
-		color: inherit;
-	}
-
-	.screen-links a:hover {
-		color: yellow;
-	}
-
-	.active {
-		left: 0;
-	}
-
-	/* .church-address {
-		display: none;
-	} */
+.text-roman {
+	font: 36px "Avenir Book", sans-serif;
+	padding-left: 5px;
+	color: #f9f7e3;
+	line-height: 0.8;
+}
