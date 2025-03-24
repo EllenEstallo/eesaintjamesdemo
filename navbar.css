@@ -36,30 +36,6 @@
 	text-decoration-line: underline;
 }
 
-.dropdown {
-	position: relative;
-	display: inline-block;
-	font: 14px "Avenir Book", sans-serif;
-	font-weight: bolder;
-}
-.dropdown-content {
-	padding-top: 30px;
-	padding-left: 30px;
-	padding-bottom: 20px;
-	display: none;
-
-	position: absolute;
-	/* background-color: #f9f7e3b9; */
-	min-width: 320px;
-}
-.dropdown-content a {
-	display: block;
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
-}
-
 .hamburger {
 	position: absolute;
 	top: 20px;
