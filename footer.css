@@ -1,13 +1,11 @@
 .footer {
-	bottom: 0;
 	text-align: right;
-	/* background-color: #f9f7e3; */
 }
 
 .church-address {
-	color: black;
-	/* color: white; */
-	font: 16px "Avenir Book", sans-serif;
-	padding: 10px;
+	font: 14px "Avenir Book", sans-serif;
 	margin-right: 100px;
+	margin-bottom: 30px;
+	color: white;
+	/* color: black; */
 }
