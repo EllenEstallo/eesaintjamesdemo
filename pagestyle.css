@@ -84,6 +84,7 @@ html {
 .text {
 	font: 24px "Avenir Book", sans-serif;
 	font-weight: bolder;
+	padding-right: 50px;
 	color: black;
 }
 ul {
