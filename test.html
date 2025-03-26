@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Navbar with Hover Effect</title>
+		<style>
+			.logo {
+				position: absolute;
+				margin: 13px 0 0 100px;
+				height: 40px;
+				z-index: 2;
+			}
+
+			.navbar {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				z-index: 100;
+				/* background-color: #f9f7e3; */
+				background-color: lightblue;
+			}
+
+			.nav-links {
+				margin: 0 100px 0 0;
+				padding: 20px;
+				display: flex;
+			}
+
+			.nav-links li {
+				margin-left: 80px;
+				padding: 40px 0; /* Corrected padding */
+				display: inline;
+			}
+
+			.nav-links a {
+				text-decoration: none;
+				font: 18px "Avenir Book", sans-serif;
+				font-weight: bolder;
+				margin-right: 50px;
+				color: white; /* Default color */
+				transition: color 0.3s; /* Smooth transition for color change */
+			}
+
+			/* .nav-links a:hover {
+				color: blue; /* Change color on hover */
+		</style>
+	</head>
+	<body>
+		<nav class="navbar">
+			<ul class="nav-links">
+				<li>
+					<a href="aboutus.html">About Us</a>
+					<a href="masstimes.html">Mass Times</a>
+				</li>
+			</ul>
+		</nav>
+
+		<script>
+			const links = document.querySelectorAll(".nav-links a");
+
+			links.forEach((link) => {
+				link.addEventListener("mouseenter", () => {
+					links.forEach((l) => {
+						l.style.color = l === link ? "white" : "gray"; // 'white' for the hovered link
+					});
+				});
+
+				link.addEventListener("mouseleave", () => {
+					links.forEach((l) => (l.style.color = "white")); // Reset all links to white
+				});
+			});
+		</script>
+	</body>
+</html>

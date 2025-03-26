@@ -32,14 +32,15 @@
 	margin-right: 50px;
 	/* color: #65360d; */
 	color: white;
+	transition: color 0.3s; /* *** Smooth transition for color change */
 }
 /* Q:  ANY HOVER SUGGESTION?  */
-.nav-links a:hover {
+/* *** .nav-links a:hover {
 	text-decoration-line: underline;
-}
+} */
 
 .hamburger {
-	position: fixed;
+	position: absolute;
 	top: 20px;
 	right: 40px;
 	font-size: 50px;
@@ -49,7 +50,7 @@
 }
 
 .screen {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: -100%;
 	width: 70%;

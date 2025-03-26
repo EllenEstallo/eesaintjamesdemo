@@ -69,7 +69,7 @@
 			<nav class="navbar">
 				<ul class="nav-links">
 					<li class="dropdown">
-						<!-- <a href="aboutus.html">About Us</a> -->
+						<a href="aboutus.html">About Us</a>
 						<a href="masstimes.html">Mass Times</a>
 					</li>		
 				</ul>
@@ -85,7 +85,7 @@
 			<div class="screen" id="screen">
 				<ul class="screen-links">
 					<li><a href="index.html">Home</a></l>
-					<!-- <li><a href="aboutus.html">About Us</a></l>  -->
+					<li><a href="aboutus.html">About Us</a></l> 
 					<li><a href="masstimes.html">Mass Times</a></l> 
 				</ul>
 			</div>
@@ -104,6 +104,22 @@
 		</footer>
 	</body>
 	<script>
+
+// 
+const links = document.querySelectorAll(".nav-links a");
+
+			links.forEach((link) => {
+				link.addEventListener("mouseenter", () => {
+					links.forEach((l) => {
+						l.style.color = l === link ? "white" : "gray"; // 'white' for the hovered link
+					});
+				});
+
+				link.addEventListener("mouseleave", () => {
+					links.forEach((l) => (l.style.color = "white")); // Reset all links to white
+				});
+			});
+// 
 
 		function toggleMenu() {
 			const screen = document.getElementById("screen");
