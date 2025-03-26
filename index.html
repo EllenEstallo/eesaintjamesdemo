@@ -76,6 +76,7 @@
 			</nav>
 
 			<div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+			
 			<!-- Q3 can't make the x button work for the hamburger -->
 			<!-- <div class="close-button" id="close-button" onclick="toggleMenu()">
 				&times;</div> -->
@@ -111,7 +112,7 @@
 				link.addEventListener("mouseenter", () => {
 					links.forEach((l) => {
 						l.style.color = l === link ? "white" : "lightblue"; 
-						// 'white' for the hovered link
+						// white for hovered link
 					});
 				});
 
@@ -121,16 +122,16 @@
 				});
 			});
 
-		function toggleMenu() {
-			const screen = document.getElementById("screen");
-			const hamburger = document.getElementById("hamburger");
+			function toggleMenu() {
+				const screen = document.getElementById("screen");
+				const hamburger = document.getElementById("hamburger");
 			
-
-			screen.classList.toggle("active");
-			hamburger.style.display = screen.classList.contains("active")
-				? "none"
-				: "block";
-		}
+				screen.classList.toggle("active");
+				hamburger.style.display = screen.classList.contains("active")
+					? "none"
+					: "block";
+			}
+			// need to get an X to close the hamburger
 
 	</script>
 </html>

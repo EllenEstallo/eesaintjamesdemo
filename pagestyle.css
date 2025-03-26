@@ -40,6 +40,15 @@ html {
 	/* background-color: chartreuse; */
 }
 
+/* /* used for confession and easter vigil  */
+.temp-box1 {
+	margin-left: 200px;
+}
+.image-box {
+	/* align-content: center; */
+	text-align: center;
+}
+
 .page-text-james-less {
 	margin: 0;
 	padding-left: 250px;
@@ -60,19 +69,18 @@ html {
 	/* color: #c4062f; */
 	color: red;
 }
+.section-title-centered {
+	font: 40px "Avenir Book", sans-serif;
+	font-weight: bolder;
+	/* color: #c4062f; */
+	color: red;
+	text-align: center;
+}
 
 .section-title-centered {
 	font: 40px "Avenir Book", sans-serif;
 	font-weight: bolder;
 	color: red;
-	text-align: center;
-}
-
-.temp-box1 {
-	margin-left: 200px;
-}
-.image-box {
-	/* align-content: center; */
 	text-align: center;
 }
 
@@ -83,11 +91,12 @@ html {
 	color: black;
 }
 
-.text {
-	font: 24px "Avenir Book", sans-serif;
+.title-centered {
+	font: 32px "Avenir Book", sans-serif;
 	font-weight: bolder;
-	padding-right: 100px;
+	/* color: red; */
 	color: black;
+	text-align: center;
 }
 
 .full-width-text {
@@ -97,6 +106,21 @@ html {
 	padding-right: 100px;
 	color: black;
 }
+
+.text {
+	font: 24px "Avenir Book", sans-serif;
+	font-weight: bolder;
+	padding-right: 100px;
+	color: black;
+}
+
+.text-centered {
+	font: 24px "Avenir Book", sans-serif;
+	font-weight: bolder;
+	color: black;
+	text-align: center;
+}
+
 /* ul {
 	list-style-type: none;
 } */
