@@ -49,6 +49,10 @@ html {
 	text-align: center;
 }
 
+.dark-background-section {
+	background-color: darkslategrey;
+}
+
 .page-text-james-less {
 	margin: 0;
 	padding-left: 250px;
@@ -74,13 +78,8 @@ html {
 	font-weight: bolder;
 	/* color: #c4062f; */
 	color: red;
-	text-align: center;
-}
-
-.section-title-centered {
-	font: 40px "Avenir Book", sans-serif;
-	font-weight: bolder;
-	color: red;
+	padding-left: 40px;
+	padding-right: 40px;
 	text-align: center;
 }
 
@@ -94,7 +93,6 @@ html {
 .title-centered {
 	font: 32px "Avenir Book", sans-serif;
 	font-weight: bolder;
-	/* color: red; */
 	color: black;
 	text-align: center;
 }
@@ -102,7 +100,7 @@ html {
 .full-width-text {
 	font: 24px "Avenir Book", sans-serif;
 	font-weight: bolder;
-	margin-left: 150px;
+	margin-left: 200px;
 	padding-right: 100px;
 	color: black;
 }

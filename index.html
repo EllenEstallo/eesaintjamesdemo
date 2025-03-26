@@ -71,6 +71,7 @@
 					<li class="dropdown">
 						<a href="aboutus.html">About Us</a>
 						<a href="masstimes.html">Mass Times</a>
+						<a href="sacraments.html">Sacraments</a> 
 					</li>		
 				</ul>
 			</nav>
@@ -88,6 +89,7 @@
 					<li><a href="index.html">Home</a></l>
 					<li><a href="aboutus.html">About Us</a></l> 
 					<li><a href="masstimes.html">Mass Times</a></l> 
+					<li><a href="sacraments.html">Sacraments</a></l> 
 				</ul>
 			</div>
 
@@ -108,30 +110,30 @@
 
 		const links = document.querySelectorAll(".nav-links a");
 
-			links.forEach((link) => {
-				link.addEventListener("mouseenter", () => {
-					links.forEach((l) => {
-						l.style.color = l === link ? "white" : "lightblue"; 
-						// white for hovered link
-					});
-				});
-
-				link.addEventListener("mouseleave", () => {
-					links.forEach((l) => (l.style.color = "white")); 
-					// Reset all links to white
+		links.forEach((link) => {
+			link.addEventListener("mouseenter", () => {
+				links.forEach((l) => {
+					l.style.color = l === link ? "white" : "gray"; 
+					// white for hovered link
 				});
 			});
 
-			function toggleMenu() {
-				const screen = document.getElementById("screen");
-				const hamburger = document.getElementById("hamburger");
+		link.addEventListener("mouseleave", () => {
+			links.forEach((l) => (l.style.color = "white")); 
+			// Reset all links to white
+			});
+		});
+
+		function toggleMenu() {
+			const screen = document.getElementById("screen");
+			const hamburger = document.getElementById("hamburger");
 			
-				screen.classList.toggle("active");
-				hamburger.style.display = screen.classList.contains("active")
-					? "none"
-					: "block";
+			screen.classList.toggle("active");
+			hamburger.style.display = screen.classList.contains("active")
+				? "none" : "block";
 			}
-			// need to get an X to close the hamburger
+			
+		// need to get an X to close the hamburger
 
 	</script>
 </html>

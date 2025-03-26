@@ -6,7 +6,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" 
 			rel="stylesheet"/>
 		
-		<link rel="stylesheet" href="./navbar.css" />
+		<link rel="stylesheet" href="./pagenavbar.css" />
 		<link rel="stylesheet" href="./style.css" />
 		<link rel="stylesheet" href="./pagestyle.css" />
 		<link rel="stylesheet" href="./footer.css" />
@@ -21,7 +21,7 @@
 
 		@media (max-width: 768px) {
     
-			.logo, .navbar {display: none}
+			.logo, .page-nav-links  {display: none}
 
 			.hamburger {
 				display: block;
@@ -46,161 +46,200 @@
 				{width: 100%}
 
 			.page-text-james-less {
+				margin: 0;
 				padding-left: 40px;
-				font: 60px "Bebas Neue", sans-serif;
-				line-height: 1;
-			}
+				font-size: 40px;
+				}
+
 			.page-text-roman {
 				padding-left: 45px;
-				font: 18px "Avenir Book", sans-serif;
+				font-size: 12px;
 				line-height: 1;
-			}
-			.section-title {
-				font: 28px "Avenir Book", sans-serif;
-				padding-top: 30px;
-				padding-left: 40px;
-				text-justify: center;
-			}
- 
-			.section-title-centered {
-				font: 28px "Avenir Book", sans-serif;
+				}
 
-			}
+			.section-title, .section-title-centered  {
+				font-size: 24px;
+				padding-left: 40px;
+				padding-top: 30px;
+				}
+				
 			.temp-box1 {
 				margin-left: 0px;
-			}
+				}
 
 			.title {
-				font: 24px "Avenir Book", sans-serif;
+				font-size: 24p;
 				padding-left: 40px;}
 
 			.title-centered {
-				font: 24px "Avenir Book", sans-serif;
-				padding-left: 40px; padding-right: 40px;}
-
-			.text,
-			.full-width-text {
-				font: 20px "Avenir Book", sans-serif;
+				font-size: 20px;
 				padding-left: 40px;
-				padding-right: 40px;}
+				padding-right: 40px}
 
-			.full-width-text {margin-left:  0;}
-			}  	
-
-			.text-centered {font: 20px "Avenir Book", sans-serif;
+			.text, .full-width-text, .text-centered {
+				margin: 0;
+				font-size: 16px;
 				padding-left: 40px;
-				padding-right: 40px;}
-			 
+				padding-right: 40px;
+				color: black;}}
 		      			 
 </style>
-<body>
-		
+<body>		
 	<main>
 		<a href="index.html"><img src="icon1.png" alt="Logo" class="logo" /></a>
 
-		<nav class="navbar">
-			<ul class="nav-links">
-				<li class="dropdown">
+		<nav class="page-navbar">
+			<ul class="page-nav-links">
+				<li class="page-dropdown">
 					<a href="aboutus.html">About Us</a>	
-                              <a href="masstimes.html">Mass Times</a>				
+                              <a href="masstimes.html">Mass Times</a>	
+					<a href="masstimes.html">Sacraments</a>			
 				</li>
-			</ul>		
+				
+			</ul>	
+			<!-- how do i make the hamburger to be inside page-navbar in mobile? -->
+			<div class="hamburger" onclick="toggleMenu()">&#9776;</div>		
 		</nav>	
-			
-		<div class="hamburger" onclick="toggleMenu()">&#9776;</div>	
 			
 		<div class="screen" id="screen">
 				<ul class="screen-links">
 					<li><a href="index.html">Home</a></l>
 					<li><a href="aboutus.html">About Us</a></l>
                               <li><a href="masstimes.html">Mass Times</a></l>
+					<li><a href="sacraments.html">Sacraments</a></li>	
 				</ul>
 		</div>
 
 		<!-- top -->
-		<br><br>
+		<br><br><br><br><br><br>
 		<div class="content-50-50-box">
 			<div class="content-50-50-left"> 
 					<div class="page-text-james-less">ST. JAMES</div>
 					<div class="page-text-james-less">THE LESS</div>
 					<div class="page-text-roman">Roman Catholic Church</div>
 			</div>
+
 			<div class="content-50-50-right">
-					<div class="section-title">We foster love by example.</div>
+					<div class="section-title">
+						We foster love by example.
+					</div>
 					<br>
 					<div class="text" style="float: left;">
-					As a parish community dedicated to proclaiming the Gospel of Jesus, we here at St. James are committed to further His mission. Through His Word, the Liturgy and the Sacraments, through music, evangelization and religious education, and through the intercession of our Blessed Virgin Mary, we deepen our knowledge, our understanding, and most especially our practice of our faith put to action.</div>
+						As a parish community dedicated to proclaiming the Gospel of Jesus, we here at St. James are committed to further His mission. Through His Word, the Liturgy and the Sacraments, through music, evangelization and religious education, and through the intercession of our Blessed Virgin Mary, we deepen our knowledge, our understanding, and most especially our practice of our faith put to action.
+					</div>
 			</div>
 		</div>
 		<br><br>
+
 		<div class="full-width-text">
 			Committing ourselves to serving the needs of our people for spiritual and social development, and economic growth, it is by design and intention that we foster love by example. 
 			<br><br>
 			Join us in doing so. 
 		</div>  
+
 		<br><br><br><br> 
 		<div class="divider"></div>
-		<br><br><br><br> 
-
-		<div class="section-title-centered">We are called to serve God's people.</div>
-		<br><br><br><br> 
-
-		<div class="title-centered">Rev. Juan Carlos Gaviria</div>
-		<div class="text-centered" style="color:gray;">Saint James The Less Parish Administrator</div>
+		<div class=dark-background-section>
 		<br><br><br>
 
-		<div class="title-centered">Rev. Peter Akkanath Chakkunny, CMI</div>
-		<div class="text-centered" style="color:gray;">In Residence</div>
-		<br>
-
-		<div class="content-50-50-box">
-			<div class="content-50-50-left"> 
-				<div class="title-centered">Mrs. Linda Rondinelli</div>
-				<div class="text-centered" style="color:gray;">Director of Religious Education</div>
-			</div>
-			<div class="content-50-50-right">
-				<div class="title-centered">Ms. Susan Carr</div>
-				<div class="text-centered" style="color:gray;">Parish Secretary</div>
-			</div>
+		<div class="section-title-centered" style="color: rgb(255, 221, 0);">
+			We are called to serve God's people.
 		</div>
-		<br><br><br><br> 
-		<div class="text-centered" style="color:gray;">The Parish Office is open from Mondays thru Thursday, 9am - 3pm.</div>
-		<div class="text-centered" style="color:gray;">jamestheless1880@gmail.com</div>
-		<div class="text-centered" style="color:gray;">Tel. 732-521-0100</div>
+		<br><br>
+
+		<div class="title-centered" style="color: white;">
+			Rev. Juan Carlos Gaviria
+		</div>
+
+		<div class="text-centered" style="color: rgba(255, 255, 255, 0.676);">
+			Saint James The Less Parish Administrator</div>
+		<br>
+		
+		<div class="title-centered" style="color: white;">
+			Rev. Peter Akkanath Chakkunny, CMI
+		</div>
+
+		<div class="text-centered" style="color: rgba(255, 255, 255, 0.676);">
+			In Residence
+		</div>
 			
+		<div class="content-50-50-box">
+			
+			<div class="content-50-50-left"> 
+				
+				<div class="title-centered" style="color: white;">
+					Mrs. Linda Rondinelli
+				</div>
+				<div class="text-centered" style="color: rgba(255, 255, 255, 0.676);">
+					Director of Religious Education
+				</div>
+			</div>
+				
+			<br>
+			<div class="content-50-50-right">
+				<div class="title-centered" style="color: white;">
+					Ms. Susan Carr
+				</div>
+				<div class="text-centered" style="color: rgba(255, 255, 255, 0.676);">
+					Parish Secretary
+				</div>
+			</div>
+		
+		</div>
+			
+		<br><br><br> 
+			
+		<div class="text-centered" style="color: rgba(255, 255, 255, 0.676);">
+			Office hours are Mon-Thu  9am-3pm.
+		</div>
+
+		<div class="text-centered" style="color: rgba(255, 255, 255, 0.676);">
+			Email: jamestheless1880@gmail.com
+		</div>
+
+		<div class="text-centered" style="color: rgba(255, 255, 255, 0.676);">
+			Tel. 732-521-0100
+		</div>
+		<br><br><br><br> 		 
+		<!-- </div>  -->
+	
 	</main>  
 	<br><br><br><br> 	
-	<br><br><br><br>  
+	
 	<footer class="footer">
 		<div class="church-address">36 Lincoln Ave., Jamesburg, NJ | 732-521-0100</div>
 	</footer>
-	<br>
+	<br><br><br><br> 	
+
 </body>
 <script> 
 
-const links = document.querySelectorAll(".nav-links a");
+	const links = document.querySelectorAll(".page-nav-links a");
 
-			links.forEach((link) => {
-				link.addEventListener("mouseenter", () => {
-					links.forEach((l) => {
-						l.style.color = l === link ? "black" : "lightgray"; 
-						// 'black' for the hovered link
-					});
-				});
-
-				link.addEventListener("mouseleave", () => {
-					links.forEach((l) => (l.style.color = "black")); 
-					// Reset all links to black
+	links.forEach((link) => {
+		link.addEventListener("mouseenter", () => {
+			links.forEach((l) => {
+				l.style.color = l === link ? "white" : "gray"; 
+				// white for hovered link
 				});
 			});
+
+		link.addEventListener("mouseleave", () => {
+			links.forEach((l) => (l.style.color = "white")); 
+			// Reset all links to white
+			});
+		});
+		
 	function toggleMenu() {
+		
 		const screen = document.getElementById("screen");
 		const hamburger = document.getElementById("hamburger");
 
 		screen.classList.toggle("active");
 		hamburger.style.display = screen.classList.contains("active")
-				? "none" : "block";			
+			? "none" : "block";			
 		}
+		
 </script>
 </html>
 

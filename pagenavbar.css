@@ -6,30 +6,35 @@
 	z-index: 10002;
 }
 
-.navbar {
+.page-navbar {
+	background-color: darkslategray;
+
 	position: fixed;
 	top: 0;
 	width: 100%;
 	padding: 0.3rem;
 	z-index: 1000;
+
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	border-bottom: 5px solid white;
 }
 
-.nav-links {
+.page-nav-links {
 	margin: 0 100px 0 0;
 	padding: 20px;
 	display: flex;
 }
 
-.nav-links li {
+.page-nav-links li {
 	margin-left: 80px;
-	padding: 40px, 0; /* top & bottom are 20px, left and right are 0 */
+	padding: 24px, 0; /* top & bottom are 20px, left and right are 0 */
 	display: inline;
+	/* color: white; */
 }
 
-.nav-links a {
+.page-nav-links a {
 	text-decoration: none;
 	font: 18px "Avenir Book", sans-serif;
 	font-weight: bolder;
@@ -44,7 +49,8 @@
 	top: 20px;
 	right: 40px;
 	font-size: 50px;
-	color: #f9f7e3;
+	/* color: #f9f7e3; */
+	color: white;
 	cursor: pointer;
 	display: none;
 }
@@ -76,31 +82,14 @@
 .screen-links a {
 	text-decoration: none;
 	font: 24px "Avenir Book", sans-serif;
-	color: #f9f7e3;
+	/* color: #f9f7e3; */
+	color: white;
 }
+/* ? links are not white until hovered */
+
 .screen-links a:hover {
 	text-decoration: underline;
 }
 .active {
 	left: 0;
-}
-
-.churchNameBox {
-	position: absolute;
-	left: 6%;
-	top: 12%;
-}
-
-.text-james-less {
-	font: 140px "Bebas Neue", sans-serif;
-	color: #f9f7e3;
-	line-height: 0.9;
-}
-
-.text-roman {
-	font: 36px "Avenir Book", sans-serif;
-	padding-left: 5px;
-
-	color: #f9f7e3;
-	line-height: 0.8;
 }

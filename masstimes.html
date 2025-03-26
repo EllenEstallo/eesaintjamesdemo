@@ -6,19 +6,22 @@
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" 
 			rel="stylesheet"/>
 		
-		<link rel="stylesheet" href="./navbar.css" />
+		<link rel="stylesheet" href="./pagenavbar.css" />
 		<link rel="stylesheet" href="./style.css" />
 		<link rel="stylesheet" href="./pagestyle.css" />
-		<!-- <link rel="stylesheet" href="./footer.css" /> -->
+		<link rel="stylesheet" href="./footer.css" />
 		
 		<title>Ellen Estallo Demo for Saint James The Less Church</title>
 	
 	</head>
 	<style>
 
+	.church-address {
+		color: black;}
+
 		@media (max-width: 768px) {
     
-			.logo, .navbar {display: none}
+			.logo, .page-nav-links  {display: none}
 
 			.hamburger {
 				display: block;
@@ -29,59 +32,64 @@
 			.screen-links li,
 			.screen-links a,
 			.screen-links a:hover,
-			.active { display: block; }
+			.active { 
+				display: block; }
 
-			ul {
-				list-style-type: none;
-			}
+			ul { list-style-type: none;}
 
 			.content-50-50-box {
 				display: flex;
-				flex-direction: column;
-
-				/* height: 500px; */ }
+				flex-direction: column;}
 
 			.content-50-50-left,
-			.content-50-50-right {width: 100%}
+			.content-50-50-right 
+				{width: 100%}
 
 			.page-text-james-less {
 				padding-left: 40px;
-				font: 60px "Bebas Neue", sans-serif;
+				font: 40px "Bebas Neue", sans-serif;
 				line-height: 1;
 			}
 			.page-text-roman {
 				padding-left: 45px;
-				font: 18px "Avenir Book", sans-serif;
+				font: 14px "Avenir Book", sans-serif;
 				line-height: 1;
 			}
 			.section-title {
-				font: 28px "Avenir Book", sans-serif;
+				font: 24px "Avenir Book", sans-serif;
 				padding-top: 30px;
 				padding-left: 40px;
 				text-justify: center;
 			}
  
 			.section-title-centered {
-				font: 28px "Avenir Book", sans-serif;
-				/* font-weight: bolder; */
-				/* color: red; */
-				text-justify: left;
+				font: 24px "Avenir Book", sans-serif;
+
 			}
 			.temp-box1 {
 				margin-left: 0px;
 			}
 
 			.title {
-				font: 24px "Avenir Book", sans-serif;
-				/* font-weight: bolder; */
+				font: 18px "Avenir Book", sans-serif;
 				padding-left: 40px;}
 
-			.text {
-				font: 20px "Avenir Book", sans-serif;
-				/* font-weight: bolder; */
+			.title-centered {
+				font: 18px "Avenir Book", sans-serif;
+				padding-left: 40px; padding-right: 40px;}
+
+			.text,
+			.full-width-text {
+				font: 16px "Avenir Book", sans-serif;
 				padding-left: 40px;
 				padding-right: 40px;}
+
+			.full-width-text {margin-left:  0;}
 			}  	
+
+			.text-centered {font: 16px "Avenir Book", sans-serif;
+				padding-left: 40px;
+				padding-right: 40px;}
 			 
 		      			 
 </style>
@@ -90,27 +98,30 @@
 	<main>
 		<a href="index.html"><img src="icon1.png" alt="Logo" class="logo" /></a>
 
-		<nav class="navbar">
-			<ul class="nav-links">
-				<li class="dropdown">
+		<nav class="page-navbar">
+			<ul class="page-nav-links">
+				<li class="page-dropdown">
 					<a href="aboutus.html">About Us</a>	
-                              <a href="masstimes.html">Mass Times</a>				
+                              <a href="masstimes.html">Mass Times</a>	
+					<a href="sacraments.html">Sacraments</a>			
 				</li>
-			</ul>		
+				
+			</ul>	
+			<!-- how do i make the hamburger to be inside page-navbar in mobile? -->
+			<div class="hamburger" onclick="toggleMenu()">&#9776;</div>		
 		</nav>	
-			
-		<div class="hamburger" onclick="toggleMenu()">&#9776;</div>	
 			
 		<div class="screen" id="screen">
 				<ul class="screen-links">
 					<li><a href="index.html">Home</a></l>
 					<li><a href="aboutus.html">About Us</a></l>
                               <li><a href="masstimes.html">Mass Times</a></l>
+					<li><a href="masstimes.html">Sacraments</a></li>	
 				</ul>
 		</div>
 
 		<!-- top -->
-		<br><br>
+		<br><br><br><br><br><br>
 		<div class="content-50-50-box">
 			<div class="content-50-50-left"> 
 					<div class="page-text-james-less">ST. JAMES</div>
@@ -118,143 +129,87 @@
 					<div class="page-text-roman">Roman Catholic Church</div>
 			</div>
 			<div class="content-50-50-right">
-					<div class="section-title">Join us for Holy Mass.</div>
-					<br>
-					<div class="title">Sunday Schedule</div>
-					<ul>
-						<li class="text">Saturday at 4:00 pm</li>
-						<li class="text">Sunday:</li>
-						<ul>
-                                          <li class="text">8:00 am</li>
-                                          <li class="text">10:00 am</li>
-                                          <li class="text">2:00 pm in Spanish</li>
-                                          <li class="text">5:00 pm</li>
-                                    </ul> 
-					</ul> 
-					<br>
-					<div class="title">Daily Schedule</div> 
-					<ul><li class="text">Monday-Friday 8:30 am</li>
-                              </ul>
-			</div>  
-		</div>
-
-		<br><br><br><br>
-		<div class="divider"></div>
-		<br><br><br><br>
-
-		<!-- middle -->
-		<!-- <div class="section-title">Join us for Prayer and Reconciliation</div> -->
-		<div class="section-title-centered">Join us for Prayer and Reconciliation</div>
-		<div class="content-50-50-box">
-			<div class="content-50-50-left">
-				<div class="temp-box1"> 
-					<div class="title">Confession</div>
-					<ul>
-						<li class="text">Thursdays at 4:30 pm</li>
-                              	<li class="text">Saturdays at 3 pm, or</li>
-						<li class="text">by appointment</li>
-					</ul> 
-					<br>
-					<div class="title">Eucharistic Adoration</div> 
-					<ul><li class="text">Thursdays at 5 pm</li>
-                              </ul>
-				</div> 
-			</div>
-			<div class="content-50-50-right">
-				<div class="title">Recitation of the Most Holy Rosary</div>
-				<ul>
-					<li class="text">before all masses of the first weekend of the month</li>
-                              <li class="text">Sundays at 1 pm in Spanish</li>
-				</ul>
+				<div class="section-title">Join us for Holy Mass.</div>
 				<br>
-				<div class="title">The Chaplet of the Divine Mercy</div>
+				<div class="title">Sunday Schedule</div>
 				<ul>
-                              <li class="text">before the 10 am mass of the second weekend of the month</li>
-                        </ul>
-			</div>  
+					<li class="text">Saturday at 4:00 pm</li>
+					<li class="text">Sunday:</li>
+					<ul>
+						<li class="text">8:00 am</li>
+						<li class="text">10:00 am</li>
+						<li class="text">2:00 pm in Spanish</li>
+						<li class="text">5:00 pm</li>
+					</ul> 
+				</ul> 
+				<br>
+				<div class="title">Daily Schedule</div> 
+				<ul><li class="text">Monday-Friday 8:30 am</li>
+				</ul>
+		</div> 
 		</div>
 
-		<!-- bottom LENT -->
-		<br><br><br><br>
+		<br><br><br><br><br>
 		<div class="divider"></div>
-		<br><br><br><br>
+		
+		<div class=dark-background-section>
+		<br><br><br><br> 
 
-		<div class="content-50-50-box">
-			
-			<div class="content-50-50-left"> 
-				<div class="image-box">
-					<img src="holyWeekCross.jpg" alt="Holy Week Cross" style="width: 55%;"> 
-				</div>		
+			<div class="section-title-centered" style="color: orangered;">
+				Join us for Prayer and Reconciliation.
 			</div>
 
-			<div class="content-50-50-right">
-				<div class="section-title">Our Holy Week Schedule</div>
-				<br><br>
+			<div class="content-50-50-box">
 				
-				<div class="title">Palm Sunday, April 12</div>
-				<ul>
-					<li class="text">Palms will be blessed at our regular Sunday schedule.</li>
-				</ul>
-				
-				<div class="title">Maundy Thursday, April 17</div>
-
-				<ul>
-                        	<li class="text">The Mass of the Lord's Supper is celebrated with the traditional Washing of the Feet at 7 pm in a bilingual service.</li>
-					<!-- <li class="text" style="list-style-type: none;">at 7 pm (bilingual).</li> -->
+				<div class="content-50-50-left">
 					
-				</ul>
+					<div class="temp-box1"> 
+						<div class="title" style="color: white;">Confession</div>
+						<ul>
+							<li class="text" style="color: gray;">Thursdays at 4:30 pm</li>
+							<li class="text" style="color: gray;">Saturdays at 3 pm, or</li>
+							<li class="text" style="color: gray;">by appointment</li>
+						</ul> 
+						<br>
 
-				<div class="title">Good Friday, April 18</div>
+						<div class="title" style="color: white;">Eucharistic Adoration</div> 
+						<ul>
+							<li class="text" style="color: gray;">Thursdays at 5 pm</li>
+						</ul>
+					</div> 
+				
+				</div>
 
-				<ul>
-					<li class="text">The Passion of the Lord is commemorated with the Veneration of the Cross at 3 pm in English.</li>
-					<p></p>
-					<!-- <li class="text" style="float: left;"></li> -->
-                        	<li class="text">The Stations of the Cross will be held at 7 pm in Spanish.</li>
-                        </ul>	
-			</div>	
-		</div>
-		<!-- bottom Easter -->	
-		<br><br><br><br>
-		<div class="divider"></div>
-		<br><br><br><br>
-
-		<div class="section-title-centered">Our Easter Celebration!</div>
-		<div class="content-50-50-box">	
-
-			<div class="content-50-50-left">
-				<div class="temp-box1"> 
-					<div class="title">The Great Easter Vigil</div>
+				<div class="content-50-50-right">
+					<div class="title" style="color: white;">
+						Recitation of the Most Holy Rosary
+					</div>
 					<ul>
-						<li class="text">Saturday, April 19 at 8 pm</li>
-					</ul> 
+						<li class="text" style="color: rgb(213, 194, 194);">
+							before all masses of the first weekend of the month
+						</li>
+						<li class="text" style="color: gray;">
+							Sundays at 1 pm in Spanish
+						</li>
+					</ul>
 					<br>
-					<div class="title">Resurrection (Easter) Sunday</div>
+					<div class="title" style="color: white;">
+						The Chaplet of the Divine Mercy
+					</div>
 					<ul>
-						<li class="text">8 am and 10 am</li>
-						<li class="text">and 12 noon in Spanish</li>
-					</ul> 
-					<div class="title">Special Celebrations</div>
-					<ul>
-						<li class="text">First Holy Communion will be celebrated on Saturday, May 3 at 10 am</li>
-						<p></p>
-						<li class="text">The Rite of Confirmation will be held on Wednesday, May 14 at 5 pm.</li>
-				</div> 
+						<li class="text" style="color: gray;">
+							before the 10 am mass of the second weekend of the month
+						</li>
+					</ul>
+				
+				</div>  
+			
 			</div>
-			<div class="content-50-50-right"> 
-				<br><br>
-				<div class="image-box">
-					<img src="/resurrection.jpg" alt="Resurrection" style="width: 80%; text-align: left;"> 
-				</div>		
-			</div>
-	
+			<br><br><br><br> 		
 		</div>
 	</main>  
-	<br><br><br>
-		<!-- <div class="divider"></div> -->
-	<br><br><br>
-		
-		 
+	<br><br><br><br> 	
+	
 	<footer class="footer">
 		<div class="church-address">36 Lincoln Ave., Jamesburg, NJ | 732-521-0100</div>
 	</footer>
@@ -262,29 +217,33 @@
 </body>
 <script> 
 
-const links = document.querySelectorAll(".nav-links a");
+	const links = document.querySelectorAll(".page-nav-links a");
 
-			links.forEach((link) => {
-				link.addEventListener("mouseenter", () => {
-					links.forEach((l) => {
-						l.style.color = l === link ? "black" : "lightgray"; 
-						// 'black' for the hovered link
-					});
-				});
-
-				link.addEventListener("mouseleave", () => {
-					links.forEach((l) => (l.style.color = "black")); 
-					// Reset all links to black
-				});
+	links.forEach((link) => {
+		link.addEventListener("mouseenter", () => {
+			links.forEach((l) => {
+				l.style.color = l === link ? "white" : "red"; 
+				// 'white' for the hovered link
 			});
+		});
+
+		link.addEventListener("mouseleave", () => {
+			links.forEach((l) => (l.style.color = "white")); 
+			// Reset all links to 'white'
+		})
+	})
+		
+	
 	function toggleMenu() {
+		
 		const screen = document.getElementById("screen");
 		const hamburger = document.getElementById("hamburger");
 
 		screen.classList.toggle("active");
 		hamburger.style.display = screen.classList.contains("active")
-				? "none" : "block";			
+		? "none" : "block";			
 		}
+		
 </script>
 </html>
 
