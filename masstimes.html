@@ -31,6 +31,10 @@
 			.screen-links a:hover,
 			.active { display: block; }
 
+			ul {
+				list-style-type: none;
+			}
+
 			.content-50-50-box {
 				display: flex;
 				flex-direction: column;
@@ -60,7 +64,7 @@
 			.section-title-centered {
 				font: 28px "Avenir Book", sans-serif;
 				/* font-weight: bolder; */
-				color: black;
+				/* color: red; */
 				text-justify: left;
 			}
 			.temp-box1 {
@@ -89,7 +93,7 @@
 		<nav class="navbar">
 			<ul class="nav-links">
 				<li class="dropdown">
-					<!-- <a href="aboutus.html">About Us</a>	 -->
+					<a href="aboutus.html">About Us</a>	
                               <a href="masstimes.html">Mass Times</a>				
 				</li>
 			</ul>		
@@ -100,13 +104,13 @@
 		<div class="screen" id="screen">
 				<ul class="screen-links">
 					<li><a href="index.html">Home</a></l>
-					<!-- <li><a href="aboutus.html">About Us</a></l> -->
+					<li><a href="aboutus.html">About Us</a></l>
                               <li><a href="masstimes.html">Mass Times</a></l>
 				</ul>
 		</div>
 
-		<br><br>
 		<!-- top -->
+		<br><br>
 		<div class="content-50-50-box">
 			<div class="content-50-50-left"> 
 					<div class="page-text-james-less">ST. JAMES</div>
@@ -114,9 +118,9 @@
 					<div class="page-text-roman">Roman Catholic Church</div>
 			</div>
 			<div class="content-50-50-right">
-					<div class="section-title">Worship With Us.</div>
+					<div class="section-title">Join us for Holy Mass.</div>
 					<br>
-					<div class="title">Sunday Mass Schedule</div>
+					<div class="title">Sunday Schedule</div>
 					<ul>
 						<li class="text">Saturday at 4:00 pm</li>
 						<li class="text">Sunday:</li>
@@ -128,7 +132,7 @@
                                     </ul> 
 					</ul> 
 					<br>
-					<div class="title">Daily Mass Schedule</div> 
+					<div class="title">Daily Schedule</div> 
 					<ul><li class="text">Monday-Friday 8:30 am</li>
                               </ul>
 			</div>  
@@ -137,9 +141,10 @@
 		<br><br><br><br>
 		<div class="divider"></div>
 		<br><br><br><br>
-<!-- middle -->
-		<!-- <div class="section-title">Join Us In Prayer and Reconciliation</div> -->
-		<div class="section-title-centered">Join Us In Prayer and Reconciliation</div>
+
+		<!-- middle -->
+		<!-- <div class="section-title">Join us for Prayer and Reconciliation</div> -->
+		<div class="section-title-centered">Join us for Prayer and Reconciliation</div>
 		<div class="content-50-50-box">
 			<div class="content-50-50-left">
 				<div class="temp-box1"> 
@@ -159,7 +164,7 @@
 				<div class="title">Recitation of the Most Holy Rosary</div>
 				<ul>
 					<li class="text">before all masses of the first weekend of the month</li>
-                              <li class="text">and Sundays at 1 pm in Spanish</li>
+                              <li class="text">Sundays at 1 pm in Spanish</li>
 				</ul>
 				<br>
 				<div class="title">The Chaplet of the Divine Mercy</div>
@@ -184,7 +189,7 @@
 
 			<div class="content-50-50-right">
 				<div class="section-title">Our Holy Week Schedule</div>
-				<br>
+				<br><br>
 				
 				<div class="title">Palm Sunday, April 12</div>
 				<ul>
@@ -256,6 +261,22 @@
 	<br>
 </body>
 <script> 
+
+const links = document.querySelectorAll(".nav-links a");
+
+			links.forEach((link) => {
+				link.addEventListener("mouseenter", () => {
+					links.forEach((l) => {
+						l.style.color = l === link ? "black" : "lightgray"; 
+						// 'black' for the hovered link
+					});
+				});
+
+				link.addEventListener("mouseleave", () => {
+					links.forEach((l) => (l.style.color = "black")); 
+					// Reset all links to black
+				});
+			});
 	function toggleMenu() {
 		const screen = document.getElementById("screen");
 		const hamburger = document.getElementById("hamburger");

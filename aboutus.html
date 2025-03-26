@@ -5,24 +5,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" 
 			rel="stylesheet"/>
+		
 		<link rel="stylesheet" href="./navbar.css" />
 		<link rel="stylesheet" href="./style.css" />
 		<link rel="stylesheet" href="./pagestyle.css" />
-		<link rel="stylesheet" href="./footer.css" />
-
+		<!-- <link rel="stylesheet" href="./footer.css" /> -->
+		
 		<title>Ellen Estallo Demo for Saint James The Less Church</title>
 	
 	</head>
 	<style>
+
 		@media (max-width: 768px) {
     
-			.logo, .navbar, .divider, .footer {display: none}
+			.logo, .navbar {display: none}
 
 			.hamburger {
 				display: block;
-				color: #65360d; }
- 
-			.image-box, .text-box {flex: 100%;} 
+				color: black }
 
 			.screen,
 			.screen-links,
@@ -30,35 +30,66 @@
 			.screen-links a,
 			.screen-links a:hover,
 			.active { display: block; }
-		
-			.page-churchNameBox {
-				width: 360px;
-				padding-left: 50px;
-				justify-self: left;}
-			
-			.page-text-james-less {font-size: 48px;}
 
-			.page-text-roman {font-size: 18px ;}  
+			ul {
+				list-style-type: none;
+			}
 
-			.tagline {
-				padding-top: 50px;
-				padding-left: 50px;
-				font-size: 24px;}  
+			.content-50-50-box {
+				display: flex;
+				flex-direction: column;
 
-			.text {
-				margin: 0px;
-				padding-left: 50px;
-				padding-right: 50px;
+				/* height: 500px; */ }
 
-				font-family: "Avenir Book", sans-serif;
-				font-size: 20px;
-				color: #65360d;
+			.content-50-50-left,
+			.content-50-50-right {width: 100%}
+
+			.page-text-james-less {
+				padding-left: 40px;
+				font: 60px "Bebas Neue", sans-serif;
+				line-height: 1;
+			}
+			.page-text-roman {
+				padding-left: 45px;
+				font: 18px "Avenir Book", sans-serif;
+				line-height: 1;
+			}
+			.section-title {
+				font: 28px "Avenir Book", sans-serif;
+				padding-top: 30px;
+				padding-left: 40px;
+				text-justify: center;
+			}
+ 
+			.section-title-centered {
+				font: 28px "Avenir Book", sans-serif;
 				/* font-weight: bolder; */
-				}  			 
-			} 
+				/* color: red; */
+				text-justify: left;
+			}
+			.temp-box1 {
+				margin-left: 0px;
+			}
+
+			.title {
+				font: 24px "Avenir Book", sans-serif;
+				/* font-weight: bolder; */
+				padding-left: 40px;}
+
+			.text,
+			.full-width-text {
+				font: 20px "Avenir Book", sans-serif;
+				/* font-weight: bolder; */
+				padding-left: 40px;
+				padding-right: 40px;}
+
+			.full-width-text {margin-left:  0;}
+			}  	
 			 
+		      			 
 </style>
-<body>		
+<body>
+		
 	<main>
 		<a href="index.html"><img src="icon1.png" alt="Logo" class="logo" /></a>
 
@@ -66,7 +97,7 @@
 			<ul class="nav-links">
 				<li class="dropdown">
 					<a href="aboutus.html">About Us</a>	
-					<a href="masstimes.html">Mass Times</a>				
+                              <a href="masstimes.html">Mass Times</a>				
 				</li>
 			</ul>		
 		</nav>	
@@ -77,39 +108,56 @@
 				<ul class="screen-links">
 					<li><a href="index.html">Home</a></l>
 					<li><a href="aboutus.html">About Us</a></l>
-					<li><a href="masstimes.html">Mass Times</a></l>
+                              <li><a href="masstimes.html">Mass Times</a></l>
 				</ul>
 		</div>
 
-		<!-- <div class="divider"></div> -->
+		<!-- top -->
 		<br><br>
-		<div class="content-box1">
-			<div class="image-box">
-				<div class="page-churchNameBox"> 
+		<div class="content-50-50-box">
+			<div class="content-50-50-left"> 
 					<div class="page-text-james-less">ST. JAMES</div>
 					<div class="page-text-james-less">THE LESS</div>
 					<div class="page-text-roman">Roman Catholic Church</div>
-				</div>
 			</div>
-			<div class="text-box">
-				<div class="tagline">We foster love by example.</div>
-				<br>
-				<div class="text">As a parish community dedicated to proclaiming the Gospel of Jesus, we here at St. James are committed to further His mission. Through His Word, the Liturgy and the Sacraments, through music, evangelization and religious education, and through the intercession of our Blessed Virgin Mary, we deepen our knowledge, our understanding, and most especially our practice of our faith put to action.
-				<p></p>
-				Committing ourselves to serving the needs of our people for spiritual and social development, and economic growth, it is by design and intention that we foster love by example.
-				<p></p>
-				Join us in doing so. </div> 
+			<div class="content-50-50-right">
+					<div class="section-title">We foster love by example.</div>
+					<br>
+					<div class="text" style="float: left;">
+					As a parish community dedicated to proclaiming the Gospel of Jesus, we here at St. James are committed to further His mission. Through His Word, the Liturgy and the Sacraments, through music, evangelization and religious education, and through the intercession of our Blessed Virgin Mary, we deepen our knowledge, our understanding, and most especially our practice of our faith put to action.</div>
 			</div>
-		</div>		  
-	</main>
-	<br><br><br><br>
+		</div>
+		<br><br>
+		<div class="full-width-text">
+			Committing ourselves to serving the needs of our people for spiritual and social development, and economic growth, it is by design and intention that we foster love by example. 
+			<br><br>
+			Join us in doing so. 
+		</div>   
 		
+	</main>  
+	<br><br><br>	 
 	<footer class="footer">
 		<div class="church-address">36 Lincoln Ave., Jamesburg, NJ | 732-521-0100</div>
 	</footer>
-	
+	<br>
 </body>
-<script> 	
+<script> 
+
+const links = document.querySelectorAll(".nav-links a");
+
+			links.forEach((link) => {
+				link.addEventListener("mouseenter", () => {
+					links.forEach((l) => {
+						l.style.color = l === link ? "black" : "lightgray"; 
+						// 'black' for the hovered link
+					});
+				});
+
+				link.addEventListener("mouseleave", () => {
+					links.forEach((l) => (l.style.color = "black")); 
+					// Reset all links to black
+				});
+			});
 	function toggleMenu() {
 		const screen = document.getElementById("screen");
 		const hamburger = document.getElementById("hamburger");
@@ -117,7 +165,7 @@
 		screen.classList.toggle("active");
 		hamburger.style.display = screen.classList.contains("active")
 				? "none" : "block";			
-		}				
+		}
 </script>
 </html>
 

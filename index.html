@@ -105,21 +105,21 @@
 	</body>
 	<script>
 
-// 
-const links = document.querySelectorAll(".nav-links a");
+		const links = document.querySelectorAll(".nav-links a");
 
 			links.forEach((link) => {
 				link.addEventListener("mouseenter", () => {
 					links.forEach((l) => {
-						l.style.color = l === link ? "white" : "gray"; // 'white' for the hovered link
+						l.style.color = l === link ? "white" : "lightblue"; 
+						// 'white' for the hovered link
 					});
 				});
 
 				link.addEventListener("mouseleave", () => {
-					links.forEach((l) => (l.style.color = "white")); // Reset all links to white
+					links.forEach((l) => (l.style.color = "white")); 
+					// Reset all links to white
 				});
 			});
-// 
 
 		function toggleMenu() {
 			const screen = document.getElementById("screen");

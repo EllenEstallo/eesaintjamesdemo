@@ -49,7 +49,7 @@ html {
 }
 .page-text-roman {
 	margin: 0;
-	padding-left: 250px;
+	padding-left: 255px;
 	font: 24px "Avenir Book", sans-serif;
 	color: black;
 	line-height: 1;
@@ -57,13 +57,14 @@ html {
 .section-title {
 	font: 40px "Avenir Book", sans-serif;
 	font-weight: bolder;
-	color: black;
+	/* color: #c4062f; */
+	color: red;
 }
 
 .section-title-centered {
 	font: 40px "Avenir Book", sans-serif;
 	font-weight: bolder;
-	color: black;
+	color: red;
 	text-align: center;
 }
 
@@ -78,18 +79,27 @@ html {
 .title {
 	font: 32px "Avenir Book", sans-serif;
 	font-weight: bolder;
+	/* color: red; */
 	color: black;
 }
 
 .text {
 	font: 24px "Avenir Book", sans-serif;
 	font-weight: bolder;
-	padding-right: 50px;
+	padding-right: 100px;
 	color: black;
 }
-ul {
-	list-style-type: none;
+
+.full-width-text {
+	font: 24px "Avenir Book", sans-serif;
+	font-weight: bolder;
+	margin-left: 150px;
+	padding-right: 100px;
+	color: black;
 }
+/* ul {
+	list-style-type: none;
+} */
 .divider {
 	width: 100%;
 	height: 0.25px;
