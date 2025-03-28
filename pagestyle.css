@@ -46,6 +46,7 @@ html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	flex-direction: column;
 	/* text-align: left; */
 }
 
@@ -62,6 +63,32 @@ html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+.content-65-35-box {
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.content-65-left {
+	flex: 65%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* background-color: aquamarine; */
+	/* text-align: left; */
+}
+
+.content-35-right {
+	flex: 35%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	flex-direction: column;
+	/* background-color: cornflowerblue; */
+	/* text-align: left; */
 }
 
 /* BACKGROUND */
@@ -180,4 +207,16 @@ html {
 .title-centered-in-dark,
 .text-centered-in-dark {
 	text-align: center;
+}
+
+/* Images */
+
+.membership-left-aligned-photo {
+	text-align: left;
+	display: block;
+}
+
+.membership-centered-photo {
+	text-align: center;
+	display: none;
 }
