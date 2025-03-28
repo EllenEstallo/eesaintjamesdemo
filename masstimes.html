@@ -16,233 +16,267 @@
 	</head>
 	<style>
 
-	.church-address {
-		color: black;}
-
 		@media (max-width: 768px) {
+
+			.logo {height: 40px;}
     
-			.logo, .page-nav-links  {display: none}
+		 	.top-space, .page-nav-links, .page-text-james-less, .page-text-roman{display: none}
+			 
+			.page-navbar {height: 80px;}
 
-			.hamburger {
-				display: block;
-				color: black }
+			.hamburger, .top-mobile-space, .church-address {display: block;}
+		
+			.page-text-james-less,
+			.section-title,
+			.section-title-centered,
+			.section-title-centered-in-dark, 
+			.section-title-inside-box, 
+			.title,
+			.title-centered,
+			.title-centered-in-dark, 
+			.text,
+			.text-centered,
+			.text-centered-in-dark,
+			.text-inside-box,
+			.full-width-text,
+			.church-address {
+				margin-top: 0px;
+				margin-left: 30px;
+				margin-right: 30px;
+				}
 
+			.content-50-50-box {
+				/* width: 100%;
+				margin-top: 50px;
+				padding: 0; */
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;}
+
+			.page-text-james-less {font-size: 60px;}
+
+
+			.section-title,
+			.section-title-centered,
+			.section-title-centered-in-dark,
+			.section-title-inside-box {
+				font-size: 20px;
+				}
+
+			.title,
+			.title-centered,
+			.title-centered-in-dark {
+				font-size: 17px;
+				}
+
+			.text,
+			.text-centered,
+			.text-centered-in-dark,
+			.text-inside-box,
+			.full-width-text,
+			/* @# why doesn't the church-address is displayed? */
+			.church-address {
+				font-size: 14px;
+				}
+			}
+			
 			.screen,
 			.screen-links,
 			.screen-links li,
 			.screen-links a,
 			.screen-links a:hover,
 			.active { 
-				display: block; }
+				display: block; } 
 
-			ul { list-style-type: none;}
-
-			.content-50-50-box {
-				display: flex;
-				flex-direction: column;}
-
-			.content-50-50-left,
-			.content-50-50-right 
-				{width: 100%}
-
-			.page-text-james-less {
-				padding-left: 40px;
-				font: 40px "Bebas Neue", sans-serif;
-				line-height: 1;
-			}
-			.page-text-roman {
-				padding-left: 45px;
-				font: 14px "Avenir Book", sans-serif;
-				line-height: 1;
-			}
-			.section-title {
-				font: 24px "Avenir Book", sans-serif;
-				padding-top: 30px;
-				padding-left: 40px;
-				text-justify: center;
-			}
- 
-			.section-title-centered {
-				font: 24px "Avenir Book", sans-serif;
-
-			}
-			.temp-box1 {
-				margin-left: 0px;
-			}
-
-			.title {
-				font: 18px "Avenir Book", sans-serif;
-				padding-left: 40px;}
-
-			.title-centered {
-				font: 18px "Avenir Book", sans-serif;
-				padding-left: 40px; padding-right: 40px;}
-
-			.text,
-			.full-width-text {
-				font: 16px "Avenir Book", sans-serif;
-				padding-left: 40px;
-				padding-right: 40px;}
-
-			.full-width-text {margin-left:  0;}
-			}  	
-
-			.text-centered {font: 16px "Avenir Book", sans-serif;
-				padding-left: 40px;
-				padding-right: 40px;}
-			 
 		      			 
 </style>
-<body>
-		
-	<main>
-		<a href="index.html"><img src="icon1.png" alt="Logo" class="logo" /></a>
+<body>		
 
-		<nav class="page-navbar">
+	<a href="index.html"><img src="icon1.png" alt="Logo" class="logo" /></a>
+
+	<nav class="page-navbar">
 			<ul class="page-nav-links">
 				<li class="page-dropdown">
 					<a href="aboutus.html">About Us</a>	
                               <a href="masstimes.html">Mass Times</a>	
-					<a href="sacraments.html">Sacraments</a>			
+					<a href="sacraments.html">Sacraments</a>
+					<a href="ccd.html">CCD</a>
+					<a href="give.html">Give<a>					
 				</li>
 				
 			</ul>	
-			<!-- how do i make the hamburger to be inside page-navbar in mobile? -->
 			<div class="hamburger" onclick="toggleMenu()">&#9776;</div>		
-		</nav>	
-			
+	</nav>	
+	<div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+	<main>
 		<div class="screen" id="screen">
 				<ul class="screen-links">
-					<li><a href="index.html">Home</a></l>
 					<li><a href="aboutus.html">About Us</a></l>
                               <li><a href="masstimes.html">Mass Times</a></l>
-					<li><a href="masstimes.html">Sacraments</a></li>	
+					<li><a href="sacraments.html">Sacraments</a></li>
+					<li><a href="ccd.html">CCD</a></li>	
+					<li><a href="give.html">Give</a></li>	
 				</ul>
 		</div>
+		<div class="top-space"></div>
+		<div class="top-mobile-space"></div>
 
-		<!-- top -->
-		<br><br><br><br><br><br>
+		<br><br>
+
 		<div class="content-50-50-box">
-			<div class="content-50-50-left"> 
-					<div class="page-text-james-less">ST. JAMES</div>
-					<div class="page-text-james-less">THE LESS</div>
-					<div class="page-text-roman">Roman Catholic Church</div>
+			<div class="content-50-left"> 
+				<div class="page-text-james-less">ST. JAMES</div>
+				<div class="page-text-james-less">THE LESS</div>
+				<div class="page-text-roman">Roman Catholic Church</div>
 			</div>
-			<div class="content-50-50-right">
-				<div class="section-title">Join us for Holy Mass.</div>
-				<br>
-				<div class="title">Sunday Schedule</div>
-				<ul>
-					<li class="text">Saturday at 4:00 pm</li>
-					<li class="text">Sunday:</li>
-					<ul>
-						<li class="text">8:00 am</li>
-						<li class="text">10:00 am</li>
-						<li class="text">2:00 pm in Spanish</li>
-						<li class="text">5:00 pm</li>
-					</ul> 
-				</ul> 
-				<br>
-				<div class="title">Daily Schedule</div> 
-				<ul><li class="text">Monday-Friday 8:30 am</li>
-				</ul>
-		</div> 
-		</div>
-
-		<br><br><br><br><br>
-		<div class="divider"></div>
-		
-		<div class=dark-background-section>
-		<br><br><br><br> 
-
-			<div class="section-title-centered" style="color: orangered;">
-				Join us for Prayer and Reconciliation.
-			</div>
-
-			<div class="content-50-50-box">
-				
-				<div class="content-50-50-left">
-					
-					<div class="temp-box1"> 
-						<div class="title" style="color: white;">Confession</div>
-						<ul>
-							<li class="text" style="color: gray;">Thursdays at 4:30 pm</li>
-							<li class="text" style="color: gray;">Saturdays at 3 pm, or</li>
-							<li class="text" style="color: gray;">by appointment</li>
-						</ul> 
-						<br>
-
-						<div class="title" style="color: white;">Eucharistic Adoration</div> 
-						<ul>
-							<li class="text" style="color: gray;">Thursdays at 5 pm</li>
-						</ul>
-					</div> 
-				
+			<div class="content-50-right">
+				<div class="section-title-inside-box">Sunday Mass Schedule
 				</div>
 
-				<div class="content-50-50-right">
-					<div class="title" style="color: white;">
-						Recitation of the Most Holy Rosary
-					</div>
+				<ul>
+					<li class="text-inside-box">Saturday at 4:00 pm</li>
+					<li class="text-inside-box">Sunday:</li>
 					<ul>
-						<li class="text" style="color: rgb(213, 194, 194);">
-							before all masses of the first weekend of the month
-						</li>
-						<li class="text" style="color: gray;">
-							Sundays at 1 pm in Spanish
-						</li>
+						<li class="text-inside-box">8 am </li>
+						<li class="text-inside-box">10 am </li>
+						<li class="text-inside-box">2 pm in Spanish</li>
+						<li class="text-inside-box">5 pm </li>
 					</ul>
-					<br>
-					<div class="title" style="color: white;">
-						The Chaplet of the Divine Mercy
-					</div>
-					<ul>
-						<li class="text" style="color: gray;">
-							before the 10 am mass of the second weekend of the month
-						</li>
-					</ul>
-				
-				</div>  
-			
+				</ul>
+				<br>
+				<div class="section-title-inside-box">Daily Mass Schedule
+				</div>
+				<ul>
+					<li class="text-inside-box">Monday to Friday at 8:30 am </li>
+				</ul>
 			</div>
-			<br><br><br><br> 		
 		</div>
+		<br><br><br><br> 
+		<div class=dark-background-section>
+			<br><br><br><br> 
+			<div class="section-title-centered-in-dark"> 
+				Prayer and Reconciliation
+			</div> 
+
+			<br><br> 
+			<div class="content-50-50-box">
+
+				<div class="content-50-left"> 
+					<div class="title-centered-in-dark">
+						Confessions
+					</div>
+					<div class="text-centered-in-dark">
+						Thursdays at 4:30 pm 
+					</div>
+					<div class="text-centered-in-dark">
+						Saturdays at 3 pm 
+					</div>
+					<div class="text-centered-in-dark">
+						by appointment 
+					</div>
+				</div>
+				<br><br>
+				<div class="content-50-right"> 
+					<div class="title-centered-in-dark">
+						Eucharistic Adoration
+					</div>
+					<div class="text-centered-in-dark">
+						Thursdays at 5 pm 
+					</div>
+				</div>
+			</div>
+
+			<br><br>
+			<div class="title-centered-in-dark">
+				Recitation of the Most Holy Rosary
+			</div>
+			<div class="text-centered-in-dark">
+				before all masses on the first weekend of the month
+			</div>
+			<div class="text-centered-in-dark">
+				every Sunday at 1 pm in Spanish
+			</div>
+
+			<br><br>
+			<div class="title-centered-in-dark">
+				Recitation of the Chaplet of the Divine Mercy
+			</div>
+			<div class="text-centered-in-dark">
+				before the 10 am mass on the second weekend of the month
+			</div>
+
+			<br><br><br><br>
+		</div>
+
+			<!-- 
+					<div class="text-centered-in-dark">
+						Thursdays at 4:30 pm 
+					</div>
+				</div>
+				<br>
+				<div class="content-50-right">
+					<div class="title-centered-in-dark">
+						Ms. Susan Carr
+					</div>
+					<div class="text-centered-in-dark">
+						Parish Secretary
+					</div>
+					
+			
+		</div>  -->
 	</main>  
-	<br><br><br><br> 	
-	
-	<footer class="footer">
-		<div class="church-address">36 Lincoln Ave., Jamesburg, NJ | 732-521-0100</div>
-	</footer>
+	<br><br>
+	<div class="church-address">
+		36 Lincoln Ave., Jamesburg, NJ | Tel. 732-521-0100
+	</div> 
 	<br>
+	<br><br><br><br><br><br>
+	<div class="divider"></div>
+	<div class="top-space>"></div> 
+	<br><br><br><br><br><br>
+	<div class="divider"></div>
+	<div class="top-space>"></div> 
+	<br><br><br><br><br><br>
+	<div class="divider"></div>
+	<div class="top-space>"></div> 
 </body>
 <script> 
 
-	const links = document.querySelectorAll(".page-nav-links a");
 
-	links.forEach((link) => {
-		link.addEventListener("mouseenter", () => {
-			links.forEach((l) => {
-				l.style.color = l === link ? "white" : "red"; 
-				// 'white' for the hovered link
-			});
-		});
+hamburgerCharacter = "&#9776;"
+		crossCharacter = "&#10799;"
 
-		link.addEventListener("mouseleave", () => {
-			links.forEach((l) => (l.style.color = "white")); 
-			// Reset all links to 'white'
-		})
-	})
+		function toggleMenu() {
+			const screen = document.getElementById("screen");
+			const hamburger = document.getElementById("hamburger");
+			
+			screen.classList.toggle("active");
+			hamburger.innerHTML = screen.classList.contains("active")
+				? crossCharacter : hamburgerCharacter;
+			}
+
+	// hamburgerCharacter = "&#9776;"
+	// 	crossCharacter = "&#10799;"
+
+	// 	function toggleMenu() {
+	// 		const screen = document.getElementById("screen");
+	// 		const hamburger = document.getElementById("hamburger");
+			
+	// 		screen.classList.toggle("active");
+	// 		hamburger.innerHTML = screen.classList.contains("active")
+	// 			? crossCharacter : hamburgerCharacter;
+	// 		}
+
 		
-	
-	function toggleMenu() {
+	// function toggleMenu() {
 		
-		const screen = document.getElementById("screen");
-		const hamburger = document.getElementById("hamburger");
+	// 	const screen = document.getElementById("screen");
+	// 	const hamburger = document.getElementById("hamburger");
 
-		screen.classList.toggle("active");
-		hamburger.style.display = screen.classList.contains("active")
-		? "none" : "block";			
-		}
+	// 	screen.classList.toggle("active");
+	// 	hamburger.style.display = screen.classList.contains("active")
+	// 		? "none" : "block";			
+	// 	}
 		
 </script>
 </html>

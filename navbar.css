@@ -1,8 +1,12 @@
+/* Homepage NavBar Colors: 
+.nav-links a, .hamburger, .text-james-less {color: #f9f7e3;}
+*/
+
 .logo {
 	position: fixed;
-	margin-left: 100px;
-	margin-top: 20px;
-	height: 40px;
+	margin-left: 7%;
+	margin-top: 30px;
+	height: 60px;
 	z-index: 10002;
 }
 
@@ -10,34 +14,33 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	padding: 0.3rem;
 	z-index: 1000;
 	display: flex;
 	justify-content: flex-end;
-	align-items: center;
 }
 
 .nav-links {
-	margin: 0 100px 0 0;
-	padding: 20px;
 	display: flex;
+	margin-right: 50px;
 }
 
 .nav-links li {
-	margin-left: 80px;
-	padding: 40px, 0; /* top & bottom are 20px, left and right are 0 */
 	display: inline;
+	margin-top: 20px;
 }
 
 .nav-links a {
 	text-decoration: none;
-	font: 18px "Avenir Book", sans-serif;
-	font-weight: bolder;
+	font: 22px "Arial";
+	letter-spacing: 0.25px;
 	margin-right: 50px;
-	/* color: #65360d; */
-	color: white;
+
+	color: #f9f7e3;
+	border-bottom: 2px solid transparent;
 }
-/* hover is handled as a js function */
+.nav-links a:hover {
+	border-bottom: 2px solid #f9f7e3;
+}
 
 .hamburger {
 	position: fixed;
@@ -60,7 +63,6 @@
 	display: flex;
 	flex-direction: column;
 	transition: left 1.5s ease;
-	/* ? how to transition back when link is clicked? */
 	display: none;
 }
 
@@ -75,7 +77,7 @@
 
 .screen-links a {
 	text-decoration: none;
-	font: 24px "Avenir Book", sans-serif;
+	font: 24px Arial;
 	color: #f9f7e3;
 }
 .screen-links a:hover {
@@ -88,7 +90,7 @@
 .churchNameBox {
 	position: absolute;
 	left: 6%;
-	top: 12%;
+	top: 15%;
 }
 
 .text-james-less {
@@ -98,7 +100,7 @@
 }
 
 .text-roman {
-	font: 36px "Avenir Book", sans-serif;
+	font: 36px Arial;
 	padding-left: 5px;
 
 	color: #f9f7e3;

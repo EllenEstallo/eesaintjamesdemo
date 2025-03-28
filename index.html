@@ -1,3 +1,4 @@
+<!-- HOMEPAGE -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -9,13 +10,13 @@
 		/>
 		<link rel="stylesheet" href="./navbar.css" />
 		<link rel="stylesheet" href="./style.css" />
-		<link rel="stylesheet" href="./footer.css" />
+		<!-- <link rel="stylesheet" href="./footer.css" /> -->
 		<title>Ellen Estallo Demo for Saint James The Less Church</title>
 	</head>
 	<style>
      	      
 		@media (max-width: 768px) {
-			.logo, .navbar {
+			.logo, .nav-links {
 				display: none;
 			} 
 
@@ -25,6 +26,7 @@
 
 			.churchNameBox {
 				position: absolute;
+				letter-spacing: 0.5px;
 				left: 5%;
 				top: 5%;
 			}
@@ -37,10 +39,9 @@
 			}
 
 			.text-roman {
-				font: 16px "Avenir Book", sans-serif;
-				padding-left: 2dvh;
+				font: 16px "Arial";
+				padding-left: 25px;
 				color: #f9f7e3;
-
 				line-height: 1;
 			}
 
@@ -65,31 +66,27 @@
 				<img src="icon1.png" alt="Logo" class="logo" />
 			</a> 
 
-			<!-- Q2 How can I use <nav> for mobile CSS? -->
 			<nav class="navbar">
 				<ul class="nav-links">
 					<li class="dropdown">
 						<a href="aboutus.html">About Us</a>
 						<a href="masstimes.html">Mass Times</a>
 						<a href="sacraments.html">Sacraments</a> 
+						<a href="ccd.html">CCD</a> 
+						<a href="give.html">Give</a> 
 					</li>		
 				</ul>
 			</nav>
 
-			<div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-			
-			<!-- Q3 can't make the x button work for the hamburger -->
-			<!-- <div class="close-button" id="close-button" onclick="toggleMenu()">
-				&times;</div> -->
-
-			<!-- Q4 this may not be necessary if <nav> as flex-direction column 
-				can be used for mobile too  -->
+			<div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+		
 			<div class="screen" id="screen">
 				<ul class="screen-links">
-					<li><a href="index.html">Home</a></l>
 					<li><a href="aboutus.html">About Us</a></l> 
 					<li><a href="masstimes.html">Mass Times</a></l> 
 					<li><a href="sacraments.html">Sacraments</a></l> 
+					<li><a href="ccd.html">CCD</a><li>
+					<li><a href="give.html">Give</a><li>	
 				</ul>
 			</div>
 
@@ -100,40 +97,26 @@
 			</div>
 		</main>
 
-		<footer class="footer">
+		<!-- I probably won't need a footer -->
+		<!-- <footer class="footer">
 			<div class="church-address">
 				36 Lincoln Ave., Jamesburg, NJ | 732-521-0100
 			</div>
-		</footer>
+		</footer> -->
 	</body>
 	<script>
 
-		const links = document.querySelectorAll(".nav-links a");
-
-		links.forEach((link) => {
-			link.addEventListener("mouseenter", () => {
-				links.forEach((l) => {
-					l.style.color = l === link ? "white" : "gray"; 
-					// white for hovered link
-				});
-			});
-
-		link.addEventListener("mouseleave", () => {
-			links.forEach((l) => (l.style.color = "white")); 
-			// Reset all links to white
-			});
-		});
+		hamburgerCharacter = "&#9776;"
+		crossCharacter = "&#10799;"
 
 		function toggleMenu() {
 			const screen = document.getElementById("screen");
 			const hamburger = document.getElementById("hamburger");
 			
 			screen.classList.toggle("active");
-			hamburger.style.display = screen.classList.contains("active")
-				? "none" : "block";
+			hamburger.innerHTML = screen.classList.contains("active")
+				? crossCharacter : hamburgerCharacter;
 			}
-			
-		// need to get an X to close the hamburger
 
 	</script>
 </html>

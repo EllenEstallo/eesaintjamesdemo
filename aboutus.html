@@ -16,26 +16,79 @@
 	</head>
 	<style>
 
-	.church-address {
-		color: black;}
-
 		@media (max-width: 768px) {
+
+			.logo {height: 40px;}
     
-			.logo, .page-nav-links  {display: none}
+		 	.top-space, .page-nav-links, .page-text-james-less, .page-text-roman{display: none}
+			 
+			.page-navbar {height: 80px;}
 
-			.hamburger {
-				display: block;
-				color: black }
+			.hamburger, .top-mobile-space, .church-address {display: block;}
+		
+			.page-text-james-less,
+			.section-title,
+			.section-title-centered,
+			.section-title-centered-in-dark, 
+			.section-title-inside-box, 
+			.title,
+			.title-centered,
+			.title-centered-in-dark, 
+			.text,
+			.text-centered,
+			.text-centered-in-dark,
+			.text-inside-box,
+			.full-width-text,
+			.church-address {
+				margin-top: 0px;
+				margin-left: 30px;
+				margin-right: 30px;
+				}
 
+			.content-50-50-box {
+				/* width: 100%;
+				margin-top: 50px;
+				padding: 0; */
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;}
+
+			.page-text-james-less {font-size: 60px;}
+
+
+			.section-title,
+			.section-title-centered,
+			.section-title-centered-in-dark,
+			.section-title-inside-box {
+				font-size: 20px;
+				}
+
+			.title,
+			.title-centered,
+			.title-centered-in-dark {
+				font-size: 17px;
+				}
+
+			.text,
+			.text-centered,
+			.text-centered-in-dark,
+			.text-inside-box,
+			.full-width-text,
+			/* @# why doesn't the church-address is displayed? */
+			.church-address {
+				font-size: 14px;
+				}
+			}
+			
 			.screen,
 			.screen-links,
 			.screen-links li,
 			.screen-links a,
 			.screen-links a:hover,
 			.active { 
-				display: block; }
+				display: block; } 
 
-			ul { list-style-type: none;}
+			/* ul { list-style-type: none;}
 
 			.content-50-50-box {
 				display: flex;
@@ -43,9 +96,9 @@
 
 			.content-50-50-left,
 			.content-50-50-right 
-				{width: 100%}
+				{width: 100%} */
 
-			.page-text-james-less {
+			/* .page-text-james-less {
 				margin: 0;
 				padding-left: 40px;
 				font-size: 40px;
@@ -55,9 +108,9 @@
 				padding-left: 45px;
 				font-size: 12px;
 				line-height: 1;
-				}
+				} */
 
-			.section-title, .section-title-centered  {
+			/* .section-title, .section-title-centered  {
 				font-size: 24px;
 				padding-left: 40px;
 				padding-top: 30px;
@@ -65,9 +118,9 @@
 				
 			.temp-box1 {
 				margin-left: 0px;
-				}
+				} */
 
-			.title {
+			/* .title {
 				font-size: 24p;
 				padding-left: 40px;}
 
@@ -76,169 +129,174 @@
 				padding-left: 40px;
 				padding-right: 40px}
 
+			 
 			.text, .full-width-text, .text-centered {
 				margin: 0;
-				font-size: 16px;
-				padding-left: 40px;
-				padding-right: 40px;
-				color: black;}}
+				font-size: 16px; */
+				/* letter-spacing: 0.25px; */
+				/* line-height: 1.15; */
+				/* padding-left: 40px; */
+				/* padding-right: 40px; */
+				/* color: black;}} */
 		      			 
 </style>
 <body>		
-	<main>
-		<a href="index.html"><img src="icon1.png" alt="Logo" class="logo" /></a>
 
-		<nav class="page-navbar">
+	<a href="index.html"><img src="icon1.png" alt="Logo" class="logo" /></a>
+
+	<nav class="page-navbar">
 			<ul class="page-nav-links">
 				<li class="page-dropdown">
 					<a href="aboutus.html">About Us</a>	
                               <a href="masstimes.html">Mass Times</a>	
-					<a href="masstimes.html">Sacraments</a>			
+					<a href="sacraments.html">Sacraments</a>
+					<a href="ccd.html">CCD</a>
+					<a href="give.html">Give<a>					
 				</li>
 				
 			</ul>	
-			<!-- how do i make the hamburger to be inside page-navbar in mobile? -->
 			<div class="hamburger" onclick="toggleMenu()">&#9776;</div>		
-		</nav>	
-			
+	</nav>	
+	<div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+	<main>
 		<div class="screen" id="screen">
 				<ul class="screen-links">
-					<li><a href="index.html">Home</a></l>
 					<li><a href="aboutus.html">About Us</a></l>
                               <li><a href="masstimes.html">Mass Times</a></l>
-					<li><a href="sacraments.html">Sacraments</a></li>	
+					<li><a href="sacraments.html">Sacraments</a></li>
+					<li><a href="ccd.html">CCD</a></li>	
+					<li><a href="give.html">Give</a></li>	
 				</ul>
 		</div>
+		<div class="top-space"></div>
+		<div class="top-mobile-space"></div>
 
-		<!-- top -->
-		<br><br><br><br><br><br>
-		<div class="content-50-50-box">
-			<div class="content-50-50-left"> 
-					<div class="page-text-james-less">ST. JAMES</div>
-					<div class="page-text-james-less">THE LESS</div>
-					<div class="page-text-roman">Roman Catholic Church</div>
+		<div class="content-45-55-box">
+			<div class="content-45-left"> 
+				<div class="page-text-james-less">ST. JAMES</div>
+				<div class="page-text-james-less">THE LESS</div>
+				<div class="page-text-roman">Roman Catholic Church</div>
 			</div>
-
-			<div class="content-50-50-right">
-					<div class="section-title">
-						We foster love by example.
-					</div>
-					<br>
-					<div class="text" style="float: left;">
-						As a parish community dedicated to proclaiming the Gospel of Jesus, we here at St. James are committed to further His mission. Through His Word, the Liturgy and the Sacraments, through music, evangelization and religious education, and through the intercession of our Blessed Virgin Mary, we deepen our knowledge, our understanding, and most especially our practice of our faith put to action.
-					</div>
+			<div class="content-55-right">
+				<div class="section-title-inside-box">We foster love by example.
+				</div>
+				<p></p>
+				<div class="text-inside-box">
+					As a parish community dedicated to proclaiming the Gospel of Jesus, we here at St. James are committed to further His mission.
+				</div>
+				<div class="text-spacer">spacer</div>
+				<div class="text-inside-box">
+					 Through His Word, the Liturgy and the Sacraments, through music, evangelization and religious education, and through the intercession of our Blessed Virgin Mary, we deepen our knowledge, our understanding, and most especially our practice of our faith put to action.
+				</div>
 			</div>
 		</div>
 		<br><br>
-
 		<div class="full-width-text">
-			Committing ourselves to serving the needs of our people for spiritual and social development, and economic growth, it is by design and intention that we foster love by example. 
+			Committing ourselves to serving the needs of our people for spiritual and social development, and economic growth, it is by design and intention that we foster love by example.  
 			<br><br>
 			Join us in doing so. 
 		</div>  
 
 		<br><br><br><br> 
-		<div class="divider"></div>
-		<div class=dark-background-section>
-		<br><br><br>
-
-		<div class="section-title-centered" style="color: rgb(255, 221, 0);">
-			We are called to serve God's people.
-		</div>
-		<br><br>
-
-		<div class="title-centered" style="color: white;">
-			Rev. Juan Carlos Gaviria
-		</div>
-
-		<div class="text-centered" style="color: rgba(255, 255, 255, 0.676);">
-			Saint James The Less Parish Administrator</div>
-		<br>
-		
-		<div class="title-centered" style="color: white;">
-			Rev. Peter Akkanath Chakkunny, CMI
-		</div>
-
-		<div class="text-centered" style="color: rgba(255, 255, 255, 0.676);">
-			In Residence
-		</div>
+		 <div class=dark-background-section> 
+			<br><br><br><br> 
 			
-		<div class="content-50-50-box">
-			
-			<div class="content-50-50-left"> 
-				
-				<div class="title-centered" style="color: white;">
-					Mrs. Linda Rondinelli
-				</div>
-				<div class="text-centered" style="color: rgba(255, 255, 255, 0.676);">
-					Director of Religious Education
-				</div>
+			<div class="section-title-centered-in-dark"> 
+				We are called to serve God's people.
+			</div> 
+			<br><br>
+
+			<div class="title-centered-in-dark">
+				Rev. Juan Carlos Gaviria
 			</div>
-				
-			<br>
-			<div class="content-50-50-right">
-				<div class="title-centered" style="color: white;">
-					Ms. Susan Carr
-				</div>
-				<div class="text-centered" style="color: rgba(255, 255, 255, 0.676);">
-					Parish Secretary
-				</div>
+			<div class="text-centered-in-dark">  
+				Saint James The Less Parish Administrator
+			</div> 
+			<br><br>
+
+			<div class="title-centered-in-dark">
+				Rev. Peter Akkanath Chakkunny, CMI
 			</div>
-		
-		</div>
-			
-		<br><br><br> 
-			
-		<div class="text-centered" style="color: rgba(255, 255, 255, 0.676);">
-			Office hours are Mon-Thu  9am-3pm.
-		</div>
+			<div class="text-centered-in-dark">
+				In Residence
+			</div>
+			<br><br>
 
-		<div class="text-centered" style="color: rgba(255, 255, 255, 0.676);">
-			Email: jamestheless1880@gmail.com
-		</div>
+			<div class="content-50-50-box">
 
-		<div class="text-centered" style="color: rgba(255, 255, 255, 0.676);">
-			Tel. 732-521-0100
-		</div>
-		<br><br><br><br> 		 
-		<!-- </div>  -->
-	
+				<div class="content-50-left"> 
+					<div class="title-centered-in-dark">
+						Mrs. Linda Rondinelli
+					</div>
+					<div class="text-centered-in-dark">
+						Director of Religious Education
+					</div>
+				</div>
+				
+				<div class="content-50-right">
+					<div class="title-centered-in-dark">
+						Ms. Susan Carr
+					</div>
+					<div class="text-centered-in-dark">
+						Parish Secretary</div>
+					</div>
+				</div>
+			<br><br><br><br>
+			<div class="text-centered-in-dark">
+				Office hours are Mon-Thu  9am-3pm
+			</div>
+			<div class="text-centered-in-dark">
+				email at jamestheless1880@gmail.com
+			</div>
+			<div class="text-centered-in-dark">
+				Tel. 732-521-0100
+			</div>
+			<br><br><br><br>
+		</div> 
 	</main>  
-	<br><br><br><br> 	
-	
-	<footer class="footer">
-		<div class="church-address">36 Lincoln Ave., Jamesburg, NJ | 732-521-0100</div>
-	</footer>
-	<br><br><br><br> 	
-
+	<br><br>
+	<div class="church-address">
+		36 Lincoln Ave., Jamesburg, NJ | Tel. 732-521-0100
+	</div> 
+	<br>
 </body>
 <script> 
 
-	const links = document.querySelectorAll(".page-nav-links a");
 
-	links.forEach((link) => {
-		link.addEventListener("mouseenter", () => {
-			links.forEach((l) => {
-				l.style.color = l === link ? "white" : "gray"; 
-				// white for hovered link
-				});
-			});
+hamburgerCharacter = "&#9776;"
+		crossCharacter = "&#10799;"
 
-		link.addEventListener("mouseleave", () => {
-			links.forEach((l) => (l.style.color = "white")); 
-			// Reset all links to white
-			});
-		});
+		function toggleMenu() {
+			const screen = document.getElementById("screen");
+			const hamburger = document.getElementById("hamburger");
+			
+			screen.classList.toggle("active");
+			hamburger.innerHTML = screen.classList.contains("active")
+				? crossCharacter : hamburgerCharacter;
+			}
+
+	// hamburgerCharacter = "&#9776;"
+	// 	crossCharacter = "&#10799;"
+
+	// 	function toggleMenu() {
+	// 		const screen = document.getElementById("screen");
+	// 		const hamburger = document.getElementById("hamburger");
+			
+	// 		screen.classList.toggle("active");
+	// 		hamburger.innerHTML = screen.classList.contains("active")
+	// 			? crossCharacter : hamburgerCharacter;
+	// 		}
+
 		
-	function toggleMenu() {
+	// function toggleMenu() {
 		
-		const screen = document.getElementById("screen");
-		const hamburger = document.getElementById("hamburger");
+	// 	const screen = document.getElementById("screen");
+	// 	const hamburger = document.getElementById("hamburger");
 
-		screen.classList.toggle("active");
-		hamburger.style.display = screen.classList.contains("active")
-			? "none" : "block";			
-		}
+	// 	screen.classList.toggle("active");
+	// 	hamburger.style.display = screen.classList.contains("active")
+	// 		? "none" : "block";			
+	// 	}
 		
 </script>
 </html>

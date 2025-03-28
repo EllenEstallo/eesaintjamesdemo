@@ -1,11 +1,12 @@
-.footer {
-	text-align: right;
-}
+/* /* no footer in homepage  */
 
 .church-address {
-	font: 14px "Avenir Book", sans-serif;
+	font-size: 16px;
+	font-family: Arial;
 	margin-right: 100px;
-	margin-bottom: 30px;
-	color: white;
-	/* white only for the homepage */
+	margin-bottom: 10px;
+	color: darkslategrey;
+	text-align: right;
+	letter-spacing: 0.25px;
+	background-color: white;
 }

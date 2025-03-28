@@ -1,56 +1,51 @@
 .logo {
 	position: fixed;
-	margin-left: 100px;
+	margin-left: 7%;
 	margin-top: 20px;
-	height: 40px;
+	height: 60px;
 	z-index: 10002;
 }
-
 .page-navbar {
-	background-color: darkslategray;
-
 	position: fixed;
 	top: 0;
 	width: 100%;
-	padding: 0.3rem;
-	z-index: 1000;
+	height: 100px;
 
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	border-bottom: 5px solid white;
+
+	background-color: darkslategrey;
+	border-bottom: 10px solid white;
 }
 
 .page-nav-links {
-	margin: 0 100px 0 0;
-	padding: 20px;
 	display: flex;
 }
 
 .page-nav-links li {
-	margin-left: 80px;
-	padding: 24px, 0; /* top & bottom are 20px, left and right are 0 */
 	display: inline;
-	/* color: white; */
 }
 
 .page-nav-links a {
 	text-decoration: none;
-	font: 18px "Avenir Book", sans-serif;
-	font-weight: bolder;
-	margin-right: 50px;
-	/* color: #65360d; */
-	color: white;
+	font: 22px Arial;
+	letter-spacing: 0.25px;
+	margin-right: 35px;
+
+	color: rgb(255, 221, 0);
+	border-bottom: 2px solid transparent;
 }
-/* hover is handled as a js function */
+.page-nav-links a:hover {
+	border-bottom: 2px solid rgb(255, 221, 0);
+}
 
 .hamburger {
 	position: fixed;
-	top: 20px;
+	top: 7px;
 	right: 40px;
 	font-size: 50px;
-	/* color: #f9f7e3; */
-	color: white;
+	color: rgb(255, 221, 0);
 	cursor: pointer;
 	display: none;
 }
@@ -62,11 +57,10 @@
 	width: 70%;
 	height: 100vh;
 	padding: 0;
-	background-color: rgba(41, 101, 172, 0.88);
+	background-color: rgba(47, 79, 79, 0.853);
 	display: flex;
 	flex-direction: column;
 	transition: left 1.5s ease;
-	/* ? how to transition back when link is clicked? */
 	display: none;
 }
 
@@ -81,11 +75,10 @@
 
 .screen-links a {
 	text-decoration: none;
-	font: 24px "Avenir Book", sans-serif;
-	/* color: #f9f7e3; */
-	color: white;
+	font: 24px Arial;
+	/* color: #87f9f9; */
+	color: rgb(255, 221, 0);
 }
-/* ? links are not white until hovered */
 
 .screen-links a:hover {
 	text-decoration: underline;

@@ -2,140 +2,182 @@ body,
 html {
 	background-color: white;
 }
-
-.nav-links a {
-	color: black;
-}
-
-.content-50-50-box {
+/* SPACES */
+.top-space {
+	height: 180px;
 	width: 100%;
-	margin-top: 50px;
-	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
-
-	/* height: 500px; */
-	/* background-color: aqua; */
 }
-.content-50-50-left {
-	flex: 50%;
-
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-
-	/* height: 400px; */
-	/* background-color: brown; */
-
-	text-align: left;
-}
-.content-50-50-right {
-	flex: 50%;
-
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-
-	/* height: 400px; */
-	/* background-color: chartreuse; */
+.top-mobile-space {
+	height: 135px;
+	width: 100%;
+	/* background: hotpink; */
+	display: none;
 }
 
-/* /* used for confession and easter vigil  */
-.temp-box1 {
-	margin-left: 200px;
+.text-spacer {
+	color: white;
 }
-.image-box {
-	/* align-content: center; */
-	text-align: center;
-}
-
-.dark-background-section {
-	background-color: darkslategrey;
-}
-
-.page-text-james-less {
-	margin: 0;
-	padding-left: 250px;
-	font: 120px "Bebas Neue", sans-serif;
-	color: black;
-	line-height: 1;
-}
-.page-text-roman {
-	margin: 0;
-	padding-left: 255px;
-	font: 24px "Avenir Book", sans-serif;
-	color: black;
-	line-height: 1;
-}
-.section-title {
-	font: 40px "Avenir Book", sans-serif;
-	font-weight: bolder;
-	/* color: #c4062f; */
-	color: red;
-}
-.section-title-centered {
-	font: 40px "Avenir Book", sans-serif;
-	font-weight: bolder;
-	/* color: #c4062f; */
-	color: red;
-	padding-left: 40px;
-	padding-right: 40px;
-	text-align: center;
-}
-
-.title {
-	font: 32px "Avenir Book", sans-serif;
-	font-weight: bolder;
-	/* color: red; */
-	color: black;
-}
-
-.title-centered {
-	font: 32px "Avenir Book", sans-serif;
-	font-weight: bolder;
-	color: black;
-	text-align: center;
-}
-
-.full-width-text {
-	font: 24px "Avenir Book", sans-serif;
-	font-weight: bolder;
-	margin-left: 200px;
-	padding-right: 100px;
-	color: black;
-}
-
-.text {
-	font: 24px "Avenir Book", sans-serif;
-	font-weight: bolder;
-	padding-right: 100px;
-	color: black;
-}
-
-.text-centered {
-	font: 24px "Avenir Book", sans-serif;
-	font-weight: bolder;
-	color: black;
-	text-align: center;
-}
-
-/* ul {
-	list-style-type: none;
-} */
+/* Divider */
 .divider {
 	width: 100%;
 	height: 0.25px;
 	margin-top: 10px;
-	background-color: black;
-}
-.footer {
-	text-align: right;
+	background-color: darkslategrey;
 }
 
-.church-address {
-	font: 14px "Avenir Book", sans-serif;
+/* BOXES */
+.content-45-55-box {
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.content-45-left {
+	flex: 45%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* text-align: left; */
+}
+
+.content-55-right {
+	flex: 55%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* text-align: left; */
+}
+
+.content-50-50-box {
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.content-50-left,
+.content-50-right {
+	flex: 50%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* BACKGROUND */
+.dark-background-section {
+	background-color: darkslategrey;
+}
+
+/* Church Name */
+.page-text-james-less,
+.page-text-roman {
+	margin-left: 200px;
+	font: 120px "Bebas Neue", sans-serif;
+	color: #ad0404;
+	line-height: 1;
+}
+.page-text-roman {
+	font: 24px Arial;
+}
+
+/* FONT FAMILY & Page Margin*/
+.section-title,
+.section-title-centered,
+.section-title-centered-in-dark,
+.section-title-inside-box,
+.title,
+.title-centered,
+.title-centered-in-dark,
+.title-inside-box,
+.text,
+.text-centered,
+.text-centered-in-dark,
+.text-inside-box,
+.text-spacer,
+.full-width-text {
+	font-family: Arial;
+	margin-left: 200px;
 	margin-right: 100px;
-	margin-bottom: 30px;
-	/* color: white; */
-	color: black;
+}
+
+.section-title-inside-box,
+.title-inside-box,
+.text-inside-box {
+	margin-left: 0px;
+}
+
+/* FONT-COLORS */
+.section-title,
+.section-title-centered,
+.section-title-inside-box,
+.title,
+.title-centered,
+.title-inside-box {
+	color: #ad0404;
+}
+.text,
+.text-centered,
+.full-width-text,
+.text-inside-box {
+	color: darkslategrey;
+}
+.text-spacer {
+	color: white;
+}
+
+/* Text Colors in Dark Background */
+.section-title-centered-in-dark {
+	color: rgb(255, 221, 0);
+}
+.title-centered-in-dark {
+	color: gainsboro;
+}
+
+.text-centered-in-dark {
+	color: rgb(141, 140, 140);
+}
+
+/* FONT-SIZE */
+.section-title,
+.section-title-centered,
+.section-title-centered-in-dark,
+.section-title-inside-box {
+	font-size: 40px;
+}
+.title,
+.title-centered,
+.title-centered-in-dark,
+.title-inside-box {
+	font-size: 32px;
+}
+.text,
+.text-centered,
+.text-centered-in-dark,
+.full-width-text,
+.text-inside-box {
+	font-size: 24px;
+}
+
+/* Letter Spacing & Line Height */
+
+.section-title-centered-in-dark,
+.title-centered-in-dark,
+.text,
+.text-centered,
+.full-width-text,
+.text-centered-in-dark,
+.text-inside-box {
+	letter-spacing: 0.25px;
+	line-height: 1.25;
+}
+
+/* Text Alignment */
+
+.section-title-centered,
+.section-title-centered-in-dark,
+.title-centered,
+.title-centered-in-dark,
+.text-centered-in-dark {
+	text-align: center;
 }
