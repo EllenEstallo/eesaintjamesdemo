@@ -244,13 +244,16 @@ html {
 
 /* Images */
 
-.left-aligned-photo {
+.left-aligned-photo
+/* , .centered-photo  */ {
 	text-align: left;
 	display: block;
 }
 
+/* .left-aligned-photo, */
 .centered-photo-mobile {
 	text-align: center;
+	/* display: block; */
 	display: none;
 }
 
