@@ -39,7 +39,7 @@ html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: aquamarine;
+	/* background-color: aquamarine; */
 }
 
 .content-65-right {
@@ -48,7 +48,7 @@ html {
 	padding: 0;
 	box-sizing: border-box;
 	flex-direction: column;
-	background-color: cornflowerblue;
+	/* background-color: cornflowerblue; */
 }
 .content-45-55-box {
 	width: 100%;
@@ -137,6 +137,7 @@ html {
 .section-title-centered,
 .section-in-dark,
 .section-title-centered-in-dark,
+.section-in-dark-from-right,
 .section-title-inside-box,
 .title,
 .title-centered,
@@ -147,6 +148,7 @@ html {
 .text-centered,
 .text-centered-in-dark,
 .text-in-dark,
+.text-in-dark-from-right,
 .text-inside-box,
 .text-spacer,
 .full-width-text {
@@ -156,6 +158,7 @@ html {
 }
 
 .section-title-inside-box,
+.section-in-dark-from-right,
 .title-inside-box,
 .text-inside-box {
 	margin-left: 0px;
@@ -182,11 +185,13 @@ html {
 
 /* Text Colors in Dark Background */
 .section-in-dark,
-.section-title-centered-in-dark {
+.section-title-centered-in-dark,
+.section-in-dark-from-right {
 	color: rgb(255, 221, 0);
 }
 .title-centered-in-dark,
-.text-in-dark 
+.text-in-dark,
+.text-in-dark-from-right 
 /* for marriage section  */ {
 	color: gainsboro;
 }
@@ -199,6 +204,7 @@ html {
 .section-title,
 .section-title-centered,
 .section-in-dark,
+.section-in-dark-from-right,
 .section-title-centered-in-dark,
 .section-title-inside-box {
 	font-size: 40px;
@@ -213,6 +219,7 @@ html {
 .text-centered,
 .text-in-dark,
 .text-centered-in-dark,
+.text-in-dark-from-right,
 .full-width-text,
 .text-inside-box {
 	font-size: 24px;
@@ -233,6 +240,11 @@ html {
 }
 
 /* Text Alignment */
+
+.section-in-dark-from-right,
+.text-in-dark-from-right {
+	margin-left: 0px;
+}
 
 .section-title-centered,
 .section-title-centered-in-dark,
