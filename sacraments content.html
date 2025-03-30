@@ -6,11 +6,12 @@
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" 
 			rel="stylesheet"/>
 		
-		<!-- <link rel="stylesheet" href="./pagenavbar.css" /> -->
-		<link rel="stylesheet" href="./style.css" />
-		<link rel="stylesheet" href="./pagestyle.css" />
-		<link rel="stylesheet" href="./footer.css" />
-		<link rel="stylesheet" href="./pagenavbar.css">
+			<!-- <link rel="stylesheet" href="./pagenavbar.css" /> -->
+			<link rel="stylesheet" href="./style.css" />
+			<link rel="stylesheet" href="./pagestyle.css" />
+			<link rel="stylesheet" href="./footer.css" />
+			<link rel="stylesheet" href="./pagenavbar.css"/>
+
 		
 		<title>Ellen Estallo Demo for Saint James The Less Church</title>
 	
@@ -21,24 +22,24 @@
 
 			.logo {height: 40px;}
     
-		 	.top-space, .page-nav-links, .page-text-james-less, .page-text-roman {display: none}
+		 	.top-space, .page-nav-links, .page-text-james-less, .page-text-roman{display: none}
 			 
 			.page-navbar {height: 80px;}
 
-			.hamburger, .top-mobile-space, .church-address
-			{display: block;}
+			.hamburger, .top-mobile-space, .church-address {display: block;}
 		
 			.page-text-james-less,
 			.section-title,
+			.section-in-dark,
 			.section-title-centered,
 			.section-title-centered-in-dark, 
 			.section-title-inside-box, 
 			.title,
 			.title-centered,
 			.title-centered-in-dark, 
-			.title-inside-box,
 			.text,
 			.text-centered,
+			.text-in-dark,
 			.text-centered-in-dark,
 			.text-inside-box,
 			.full-width-text,
@@ -48,7 +49,8 @@
 				margin-right: 30px;
 				}
 
-			.content-50-50-box {
+			.content-50-50-box,
+			.content-65-35-box {
 				display: flex;
 				flex-wrap: wrap;
 				flex-direction: column;}
@@ -59,24 +61,27 @@
 			.section-title,
 			.section-title-centered,
 			.section-title-centered-in-dark,
+			.section-in-dark,
 			.section-title-inside-box {
 				font-size: 26px;
 				}
 
 			.title,
 			.title-centered,
-			.title-centered-in-dark,
-			.title-inside-box {
+			.title-centered-in-dark {
 				font-size: 22px;
 				}
 
 			.text,
 			.text-centered,
+			.text-in-dark,
 			.text-centered-in-dark,
 			.text-inside-box,
-			.full-width-text {
+			.full-width-text
+			{
 				font-size: 18px;
 				}
+			
 			
 			.screen,
 			.screen-links,
@@ -86,56 +91,75 @@
 			.active { 
 				display: block; } 
 
-			.church-address {font-size: 14px; text-align: center}
-		}
-		      			 
-	</style>
+			.left-aligned-photo,
+			.right-aligned-photo {
+				display: none;
+				}
+
+			.centered-photo-mobile {
+				display: block;
+				}
+
+
+
+
+
+
+			}		      			 
+</style>
 <body>		
 
 	<a href="index.html"><img src="icon1.png" alt="Logo" class="logo" /></a>
 
-	<nav class="page-navbar">
-		<ul class="page-nav-links">
-		    <li class="dropdown">
-			  <a href="aboutus.html">About Us</a>
-			  <div class="dropdown-content">
-				<a href="aboutus.html">Our Parish Mission</a>
-				<a href="aboutus.html#servant-leaders">Our Servant Leaders</a>
-				<a href="aboutus.html#parish-membership">Parish Membership</a>
-			  </div>
-		    </li>
-		    <li class="dropdown"> 
-			  <a href="masstimes.html">Mass Times</a>
-			  <div class="dropdown-content">
-				<a href="masstimes.html">Our Holy Week Schedule</a>
-				<a href="masstimes.html#easter">Our Easter Schedule</a>
-				<a href="masstimes.html#sunday-mass">Our Sunday Mass Schedule</a>
-				<a href="masstimes.html#prayer-and-reconciliation">Prayer and Reconciliation</a>
-			  </div>
-		    </li>  
-		    	<li class="dropdown"> 
+	<nav class="navbar">
+		<ul class="nav-links">
+			<li class="dropdown">
+				<a href="aboutus.html">About Us</a>
+				<div class="dropdown-content">
+					<a href="aboutus.html">Our Parish Mission</a>
+					    <a href="aboutus.html#servant-leaders">Our Servant Leaders</a>
+					<a href="aboutus.html#parish-membership">Parish Membership</a>
+
+				</div>
+			</li>	
+			
+			<li class="dropdown"> 
+				<a href="masstimes.html">Mass Times</a>
+				<div class="dropdown-content">
+					<a href="masstimes.html">Our Holy Week Schedule</a>
+					    <a href="masstimes.html#easter">Our Easter Schedule</a>
+					<a href="masstimes.html#sunday-mass">Our Sunday Mass Schedule</a>
+					<a href="masstimes.html#prayer-and-reconciliaton">Prayer and Reconciliaton</a>
+
+				</div>
+			</li>	
+			<li class="dropdown"> 
 				<a href="sacraments.html">Sacraments</a>
 				<div class="dropdown-content">
 					<a href="sacraments.html">Baptism</a>
-					<a href="sacraments.html#marriage">Marriage</a>
 				</div>
-			</li>        
+			</li>		
+				<!-- <a href="sacraments.html">Sacraments</a>  -->
+				<!-- <a href="index.html">CCD</a>  -->
+				<!-- <a href="index.html">Give</a>  -->
 		</ul>
-	</nav>	
+	</nav>
 	<div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+	
+	<div class="screen" id="screen">
+		<ul class="screen-links">
+			<li><a href="aboutus.html">About Us</a></l>
+                  <li><a href="masstimes.html">Mass Times</a></l>
+			<li><a href="index.html">Sacraments</a></li>
+			<li><a href="index.html">CCD</a></li>	
+			<li><a href="index.html">Give</a></li>	
+		</ul>
+	</div>
 	<main>
-		<div class="screen" id="screen">
-				<ul class="screen-links">
-					<li><a href="aboutus.html">About Us</a></l>
-                              <li><a href="masstimes.html">Mass Times</a></l>
-					<li><a href="sacraments.html">Sacraments</a></li> 
-					<!-- <li><a href="ccd.html">CCD</a></li>	 -->
-					<!-- <li><a href="give.html">Give</a></li>	 -->
-				</ul>
-		</div>
 		<div class="top-space"></div>
 		<div class="top-mobile-space"></div>
-
+		<div class="section-title-centered">The Sacraments of the Catholic Church</div>
+		<br><br>
 		<!-- BAPTISM -->
 		<div class="content-65-35-box">
 			<div class="content-65-left"> 
@@ -176,9 +200,9 @@
 			The chosen Godparents, also known as sponsors, are to be practicing Catholics and living examples of a Christ-centered life.  They must have received the the Sacrament of Baptism and Confirmation.   Sponsor letters for all Godparents are required no later than two weeks before the scheduled Baptism.
 		</div>
 		<!-- MARRIAGE -->
-		<div id="marriage">	
-		</div>
-		<br><br><br><br><br><br>
+		<br><br><br><br>
+
+		<!-- MARRIAGE -->
 
 		<div class="dark-background-section"> 
 			<br><br><br><br>
@@ -214,14 +238,12 @@
 			</div>		 
 			<br><br><br><br>
 		</div> 
-		
-	</main> 
-	 
-	<br>
+	</main>  
+	<br><br><br><br>
 	<div class="church-address">
 		36 Lincoln Ave., Jamesburg, NJ | Tel. 732-521-0100
 	</div> 
-	<br>
+	<br><br><br><br>
 </body>
 <script> 
 
@@ -238,29 +260,6 @@ hamburgerCharacter = "&#9776;"
 				? crossCharacter : hamburgerCharacter;
 			}
 
-	// hamburgerCharacter = "&#9776;"
-	// 	crossCharacter = "&#10799;"
-
-	// 	function toggleMenu() {
-	// 		const screen = document.getElementById("screen");
-	// 		const hamburger = document.getElementById("hamburger");
-			
-	// 		screen.classList.toggle("active");
-	// 		hamburger.innerHTML = screen.classList.contains("active")
-	// 			? crossCharacter : hamburgerCharacter;
-	// 		}
-
-		
-	// function toggleMenu() {
-		
-	// 	const screen = document.getElementById("screen");
-	// 	const hamburger = document.getElementById("hamburger");
-
-	// 	screen.classList.toggle("active");
-	// 	hamburger.style.display = screen.classList.contains("active")
-	// 		? "none" : "block";			
-	// 	}
-		
 </script>
 </html>
 
