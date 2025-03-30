@@ -48,9 +48,6 @@
 				}
 
 			.content-50-50-box {
-				/* width: 100%;
-				margin-top: 50px;
-				padding: 0; */
 				display: flex;
 				flex-wrap: wrap;
 				flex-direction: column;}
@@ -76,11 +73,9 @@
 			.text-centered,
 			.text-centered-in-dark,
 			.text-inside-box,
-			.full-width-text
-			 {
+			.full-width-text {
 				font-size: 18px;
 				}
-			
 			
 			.screen,
 			.screen-links,
@@ -89,27 +84,33 @@
 			.screen-links a:hover,
 			.active { 
 				display: block; } 
-
 		}
-
 		      			 
-</style>
+	</style>
 <body>		
 
 	<a href="index.html"><img src="icon1.png" alt="Logo" class="logo" /></a>
 
 	<nav class="page-navbar">
-			<ul class="page-nav-links">
-				<li class="page-dropdown">
-					<a href="aboutus.html">About Us</a>	
-                              <a href="masstimes.html">Mass Times</a>	
-					<!-- <a href="sacraments.html">Sacraments</a> -->
-					<!-- <a href="index.html">CCD</a> -->
-					<!-- <a href="index.html">Give<a>					 -->
-				</li>
-				
-			</ul>	
-			<div class="hamburger" onclick="toggleMenu()">&#9776;</div>		
+		<ul class="page-nav-links">
+		    <li class="dropdown">
+			  <a href="aboutus.html">About Us</a>
+			  <div class="dropdown-content">
+				<a href="aboutus.html">Our Parish Mission</a>
+				<a href="aboutus.html#servant-leaders">Our Servant Leaders</a>
+				<a href="aboutus.html#parish-membership">Parish Membership</a>
+			  </div>
+		    </li>
+		    <li class="dropdown"> 
+			  <a href="masstimes.html">Mass Times</a>
+			  <div class="dropdown-content">
+				<a href="masstimes.html">Our Holy Week Schedule</a>
+				<a href="masstimes.html#easter">Our Easter Schedule</a>
+				<a href="masstimes.html#sunday-mass">Our Sunday Mass Schedule</a>
+				<a href="masstimes.html#prayer-and-reconciliation">Prayer and Reconciliation</a>
+			  </div>
+		    </li>       
+		</ul>
 	</nav>	
 	<div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
 	<main>
@@ -126,8 +127,10 @@
 		<div class="top-mobile-space"></div>
 
 		<!--  HOLY WEEK -->
-		<div class="section-title-centered">Our Holy Week Schedule</div>
-		<br><br>
+		<div class="section-title-centered">
+			Our Holy Week Schedule
+		</div>
+		<br><br><br>
 		<div class="content-50-50-box">
 			<div class="content-50-left" style="text-align: center;">
 				<img src="/holyWeekCross.jpg" style="width: 50%;"/>
@@ -149,9 +152,12 @@
 				<div class="text-inside-box">The Stations of the Lord in Spanish will also be prayed at 7pm. </div>
 			</div>
 		</div>
-		<br><br><br><br>
 
 		<!-- EASTER -->
+		<div id="easter">	
+		</div>
+		<br><br><br><br><br><br>
+
 		<div class=dark-background-section>
 			<br><br><br><br> 
 			<div class="section-title-centered-in-dark"> 
@@ -187,7 +193,14 @@
 
 			<br><br><br><br>
 		</div>
-		<br><br><br><br>
+		
+		<!-- SUNDAY MASS SCHEDULE -->
+		<div id="sunday-mass"></div>
+		<br><br><br><br><br><br><br><br>
+
+<!-- <a href="about.html#prayer-and-reconciliation">Prayer and Reconciliation</a> -->
+		<!--  -->
+
 		<div class="content-50-50-box">
 			<div class="content-50-left"> 
 				<div class="page-text-james-less">ST. JAMES</div>
@@ -216,6 +229,8 @@
 				</ul>
 			</div>
 		</div>
+		<!-- PRAYER & RECONCILIATION -->
+		<div id="prayer-and-reconciliation"></div>
 		<br><br><br><br> 
 		<div class=dark-background-section>
 			<br><br><br><br> 

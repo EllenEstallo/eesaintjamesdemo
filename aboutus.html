@@ -72,12 +72,9 @@
 			.text-centered,
 			.text-centered-in-dark,
 			.text-inside-box,
-			.full-width-text
-			/* @# why doesn't the church-address is displayed? */
-			{
+			.full-width-text {
 				font-size: 18px;
 				}
-			
 			
 			.screen,
 			.screen-links,
@@ -95,15 +92,6 @@
 				display: block;
 				}
 
-
-
-
-
-
-			/* .membership-centered-photo {
-					display: block;
-				} */
-
 			}		      			 
 </style>
 <body>		
@@ -111,20 +99,29 @@
 	<a href="index.html"><img src="icon1.png" alt="Logo" class="logo" /></a>
 
 	<nav class="page-navbar">
-			<ul class="page-nav-links">
-				<li class="page-dropdown">
-					<a href="aboutus.html">About Us</a>	
-                              <a href="masstimes.html">Mass Times</a>	
-					<!-- <a href="sacraments.html">Sacraments</a> -->
-					<!-- <a href="index.html">CCD</a> -->
-					<!-- <a href="index.html">Give<a>					 -->
-				</li>
-				
-			</ul>	
-			<div class="hamburger" onclick="toggleMenu()">&#9776;</div>		
-	</nav>	
+		<ul class="page-nav-links">
+		    <li class="dropdown">
+			  <a href="aboutus.html">About Us</a>
+			  <div class="dropdown-content">
+				<a href="aboutus.html">Our Parish Mission</a>
+				<a href="aboutus.html#servant-leaders">Our Servant Leaders</a>
+				<a href="aboutus.html#parish-membership">Parish Membership</a>
+			  </div>
+		    </li>
+		    <li class="dropdown"> 
+			  <a href="masstimes.html">Mass Times</a>
+			  <div class="dropdown-content">
+				<a href="masstimes.html">Our Holy Week Schedule</a>
+				<a href="masstimes.html#easter">Our Easter Schedule</a>
+				<a href="masstimes.html#sunday-mass">Our Sunday Mass Schedule</a>
+				<a href="masstimes.html#prayer-and-reconciliation">Prayer and Reconciliation</a>
+			  </div>
+		    </li>       
+		</ul>
+	</nav>
+	
 	<div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
-	<main>
+	<div>
 		<div class="screen" id="screen">
 				<ul class="screen-links">
 					<li><a href="aboutus.html">About Us</a></l>
@@ -143,7 +140,7 @@
 				<div class="page-text-james-less">THE LESS</div>
 				<div class="page-text-roman">Roman Catholic Church</div>
 			</div>
-			<div class="content-55-right">
+			<div class="content-55-right"> 
 				<div class="section-title-inside-box">We foster love by example.
 				</div>
 				<p></p>
@@ -162,9 +159,10 @@
 			<br><br>
 			Join us in doing so. 
 		</div>  
-
+		<div class="servant-leaders" id="servant-leaders">
 		<br><br><br><br> 
-		 <div class=dark-background-section> 
+		<div class=dark-background-section>
+		  
 			<br><br><br><br> 
 			
 			<div class="section-title-centered-in-dark"> 
@@ -217,10 +215,14 @@
 			<div class="text-centered-in-dark">
 				Tel. 732-521-0100
 			</div>
-			<br><br><br><br>
+			<br><br><br><br><br><br>
 		</div> 
+	<div id="parish-membership">
+		<br><br><br><br>
 		<br><br><br><br> 
-		<div class="section-title-centered">PARISH MEMBERSHIP</div>
+		<div class="section-title-centered">
+		PARISH MEMBERSHIP
+		</div>
 		<br><br><br><br>
 		<div class="content-65-35-box">
 			<div class="content-65-left"> 
@@ -267,6 +269,7 @@
 			Please speak to Fr. Juan, or Fr. Peter, or to any of our ministers at mass.  Give us a call, or even better pay us a visit!  We would love to have you as one of our own.
 		</div>
 		<br><br><br>
+	</div>
 
 	</main>  
 	<br><br>

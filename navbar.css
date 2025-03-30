@@ -21,7 +21,7 @@
 
 .nav-links {
 	display: flex;
-	margin-right: 50px;
+	margin-right: 100px;
 }
 
 .nav-links li {
@@ -105,4 +105,43 @@
 
 	color: #f9f7e3;
 	line-height: 0.8;
+}
+
+/*  */
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	padding-top: 20px;
+	z-index: 1;
+
+	left: 50%; /* Move it to the center */
+	transform: translateX(-50%); /* Adjust to center it */
+	white-space: nowrap;
+	/* text doesn't wrap to a new line; width based on contents. */
+}
+
+.dropdown-content a,
+.dropdown-subcontent a {
+	text-decoration: none;
+	font: 16px "Arial";
+	letter-spacing: 0.25px;
+	display: block;
+
+	color: #f9f7e3;
+	padding-top: 10px;
+	border-bottom: 2px solid transparent;
+}
+
+.dropdown-subcontent {
+	margin-left: 20px;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:hover .dropdown-subcontent {
+	display: block;
 }
