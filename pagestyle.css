@@ -10,7 +10,6 @@ html {
 .top-mobile-space {
 	height: 135px;
 	width: 100%;
-	/* background: hotpink; */
 	display: none;
 }
 
@@ -39,7 +38,6 @@ html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/* background-color: aquamarine; */
 }
 
 .content-65-right {
@@ -48,7 +46,6 @@ html {
 	padding: 0;
 	box-sizing: border-box;
 	flex-direction: column;
-	/* background-color: cornflowerblue; */
 }
 .content-45-55-box {
 	width: 100%;
@@ -62,7 +59,6 @@ html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/* text-align: left; */
 }
 
 .content-55-right {
@@ -71,7 +67,6 @@ html {
 	padding: 0;
 	box-sizing: border-box;
 	flex-direction: column;
-	/* text-align: left; */
 }
 
 .content-50-50-box {
@@ -101,8 +96,6 @@ html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/* background-color: aquamarine; */
-	/* text-align: left; */
 }
 
 .content-35-right {
@@ -111,8 +104,6 @@ html {
 	padding: 0;
 	box-sizing: border-box;
 	flex-direction: column;
-	/* background-color: cornflowerblue; */
-	/* text-align: left; */
 }
 
 /* BACKGROUND */
@@ -191,8 +182,7 @@ html {
 }
 .title-centered-in-dark,
 .text-in-dark,
-.text-in-dark-from-right 
-/* for marriage section  */ {
+.text-in-dark-from-right {
 	color: gainsboro;
 }
 
@@ -232,6 +222,7 @@ html {
 .text,
 .text-centered,
 .text-in-dark,
+.text-in-dark-from-right,
 .full-width-text,
 .text-centered-in-dark,
 .text-inside-box {
@@ -256,13 +247,11 @@ html {
 
 /* Images */
 
-.left-aligned-photo
-/* , .centered-photo  */ {
+.left-aligned-photo {
 	text-align: left;
 	display: block;
 }
 
-/* .left-aligned-photo, */
 .centered-photo-mobile {
 	text-align: center;
 	/* display: block; */
