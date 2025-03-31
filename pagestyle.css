@@ -225,7 +225,8 @@ html {
 .text-in-dark-from-right,
 .full-width-text,
 .text-centered-in-dark,
-.text-inside-box {
+.text-inside-box,
+.content-text-in-dark-from-right {
 	letter-spacing: 0.25px;
 	line-height: 1.25;
 }
