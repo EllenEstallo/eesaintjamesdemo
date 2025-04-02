@@ -264,3 +264,9 @@ html {
 	padding-right: 100px;
 	display: block;
 }
+.map-desktop {
+	display: block;
+}
+.map-mobile {
+	display: none;
+}

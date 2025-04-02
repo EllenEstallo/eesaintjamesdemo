@@ -24,9 +24,6 @@
 .page-nav-links {
 	display: flex;
 	margin-right: 100px;
-
-	/* list-style-type: none; */
-	/* padding: 0; */
 }
 
 .page-nav-links li {
@@ -34,10 +31,6 @@
 	margin-top: 15px;
 }
 
-/* .page-nav-links li { */
-/* float: left; */
-/* position: relative; */
-/* } */
 .page-nav-links a {
 	text-decoration: none;
 	font: 22px Arial;
@@ -46,16 +39,10 @@
 
 	color: rgb(255, 221, 0);
 	border-bottom: 2px solid transparent;
-	/* } */
-
-	/* .page-nav-links a { */
-	/* display: block; */
-	/* text-align: center; */
-	/* padding: 14px 16px; */
 }
 
 .page-nav-links a:hover {
-	border-bottom: 2px solid rgb(255, 221, 0);
+	color: #ad0404;
 }
 
 .hamburger {
