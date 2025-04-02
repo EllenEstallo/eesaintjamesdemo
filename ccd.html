@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" 
+			rel="stylesheet"/>
+		
+		<!-- <link rel="stylesheet" href="./pagenavbar.css" /> -->
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./pagestyle.css" />
+		<link rel="stylesheet" href="./footer.css" />
+		<link rel="stylesheet" href="./pagenavbar.css">
+		
+		<title>Ellen Estallo Demo for Saint James The Less Church</title>
+	
+	</head>
+	<style>
+
+		@media (max-width: 768px) {
+
+			.logo {height: 40px;}
+    
+		 	.top-space, .page-nav-links, .page-text-james-less, .page-text-roman {display: none}
+			 
+			.page-navbar {height: 80px;}
+
+			.hamburger, .top-mobile-space, .church-address
+			{display: block;}
+		
+			.page-text-james-less,
+			.section-title,
+			.section-title-centered,
+			.section-title-centered-in-dark, 
+			.section-in-dark-from-right,
+			.section-title-inside-box, 
+			.title,
+			.title-centered,
+			.title-centered-in-dark, 
+			.text-in-dark-from-right,
+			.title-inside-box,
+			.text,
+			.text-in-dark,
+			.text-centered,
+			.text-centered-in-dark,
+			.text-inside-box,
+			.full-width-text,
+			.church-address {
+				margin-top: 0px;
+				margin-left: 30px;
+				margin-right: 30px;
+				}
+
+			.content-50-50-box,
+			.content-65-35-box {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;}
+
+			.page-text-james-less {font-size: 60px;}
+
+
+			.section-title,
+			.section-title-centered,
+			.section-title-centered-in-dark,
+			.section-title-inside-box {
+				font-size: 26px;
+				}
+
+			.title,
+			.title-centered,
+			.title-centered-in-dark,
+			.title-inside-box {
+				font-size: 22px;
+				}
+
+			.text,
+			.text-centered,
+			.text-centered-in-dark,
+			.text-inside-box,
+			.full-width-text {
+				font-size: 18px;
+				}
+			
+			.screen,
+			.screen-links,
+			.screen-links li,
+			.screen-links a,
+			.screen-links a:hover,
+			.active { 
+				display: block; } 
+
+			.left-aligned-photo,
+			.right-aligned-photo {display: none;} 
+			.centered-photo-mobile  {display: block;} 
+
+			.church-address {font-size: 14px; text-align: center}
+		}
+		      			 
+	</style>
+<body>		
+
+	<a href="index.html"><img src="icon1.png" alt="Logo" class="logo" /></a>
+
+	<nav class="page-navbar">
+		<ul class="page-nav-links">
+		    <li class="dropdown">
+			  <a href="aboutus.html">About Us</a>
+			  <div class="dropdown-content">
+				<a href="aboutus.html">Our Parish Mission</a>
+				<a href="aboutus.html#servant-leaders">Our Servant Leaders</a>
+				<a href="aboutus.html#parish-membership">Parish Membership</a>
+			  </div>
+		    </li>
+		    <li class="dropdown"> 
+			  <a href="masstimes.html">Mass Times</a>
+			  <div class="dropdown-content">
+				<a href="masstimes.html">Our Holy Week Schedule</a>
+				<a href="masstimes.html#easter">Our Easter Schedule</a>
+				<a href="masstimes.html#sunday-mass">Our Sunday Mass Schedule</a>
+				<a href="masstimes.html#prayer-and-reconciliation">Prayer and Reconciliation</a>
+			  </div>
+		    </li>  
+		    	<li class="dropdown"> 
+				<a href="sacraments.html">Sacraments</a>
+				<div class="dropdown-content">
+					<a href="sacraments.html">Baptism</a>
+					<a href="sacraments.html#marriage">Marriage</a>
+					<a href="sacraments.html#homebound">Communion for the Homebound</a>
+					<a href="sacraments.html#anointing">Anointing of the Sick</a>
+					<a href="sacraments.html#funeral">Funeral Mass</a>
+				</div>
+			</li>        
+		</ul>
+	</nav>	
+	<div class="hamburger" id="hamburger" onclick="toggleMenu()">&#9776;</div>
+	
+		<div class="screen" id="screen">
+				<ul class="screen-links">
+					<li><a href="aboutus.html">About Us</a></l>
+                              <li><a href="masstimes.html">Mass Times</a></l>
+					<li><a href="sacraments.html">Sacraments</a></li> 
+				</ul>
+		</div>
+	<main>
+		<div class="top-space"></div>
+		<div class="top-mobile-space"></div>
+
+		<div class="section-title-centered">
+			THE RELIGIOUS EDUCATION OF CHILDREN
+		</div>
+
+		<br><br>
+		<div class="content-45-55-box">
+			<div class="content-45-left"> 
+				<div class="page-text-james-less">ST. JAMES</div>
+				<div class="page-text-james-less">THE LESS</div>
+				<div class="page-text-roman">Roman Catholic Church</div>
+			</div>
+			<div class="content-55-right"> 
+				<br><br><br>
+				<div class="section-title-inside-box">We foster love by example.
+				</div>
+				<br>
+				<div class="text-inside-box">
+					As a parish community dedicated to proclaiming the Gospel of Jesus, we here at St. James are committed to further His mission.
+				</div>
+				<div class="text-spacer">spacer</div>
+			</div>
+		</div>
+		<br><br>
+		<div class="full-width-text">
+			Through His Word, the Liturgy and the Sacraments, through music, evangelization and religious education, and through the intercession of our Blessed Virgin Mary, we deepen our knowledge, our understanding, and most especially our practice of our faith put to action.
+			<br><br>
+			Committing ourselves to serving the needs of our people for spiritual and social development, and economic growth, it is by design and intention that we foster love by example.  
+			<br><br>
+			Join us in doing so. 
+		</div>  
+
+
+
+
+		<!-- BAPTISM -->
+
+
+
+		<div class="content-65-35-box">
+			<div class="content-65-left"> 
+				<div class="section-title">
+					Baptism
+				</div>
+				<br><br>
+
+				<div class="text">
+					"Catechesis aims to bring about in the believer an ever more mature faith in Jesus Christ, a deeper knowledge and love of his message, and a firm commitment to follow him."
+				</div>
+				<br><br>
+
+				<div class="text">
+					If you are Catholic and would like to have your child baptized, we ask that you reach out to the office to schedule and to receive more information. 
+				</div>
+				<br><br>
+			</div>
+			
+			<div class="content-35-right"> 
+				<br><br>
+				<div class="left-aligned-photo">
+					<img src="./baptism-Pixabay-3899.jpg" style="width: 80%;"/>
+				</div>
+				<div class="centered-photo-mobile">
+					<img src="./baptism-Pixabay-3899.jpg" style="width: 80%;"/>
+				</div>
+			</div>
+			
+		</div>
+		<br><br>
+		<div class="text">
+			Baptisms are held every first Saturday of the month.
+		</div>
+		<br>
+		<div class="text">
+			The chosen Godparents, also known as sponsors, are to be practicing Catholics and living examples of a Christ-centered life.  They must have received the the Sacrament of Baptism and Confirmation.   Sponsor letters for all Godparents are required no later than two weeks before the scheduled Baptism.
+		</div>
+		<!-- MARRIAGE -->
+		<div id="marriage">	
+		</div>
+		<br><br><br><br><br><br>
+
+		<div class="dark-background-section"> 
+			<br><br><br><br>
+			<div class="content-50-50-box">
+
+				<div class="content-50-left"> 
+					<div class="right-aligned-photo" style="text-align: right; padding-right: 100px";>
+						<img src="./Marriage-iStock-1144716522.jpg" style="width: 50%;"/>
+					</div>
+					<div class="centered-photo-mobile">
+						<img src="./Marriage-iStock-1144716522.jpg" style="width: 60%;"/>
+					</div>
+				</div>
+				
+				<div class="content-50-right">
+					<br><br><br><br>
+					<div class="section-in-dark-from-right">
+						Marriage
+					</div>
+					<br><br>
+					<div class="text-in-dark-from-right">
+						Congratulations on your engagement!
+					</div>
+					 <br>
+					<div class="text-in-dark-from-right"> 
+						We're overjoyed to celebrate with you with on your big day, but even more excited to help you prepare for the rest of the journey beyond your wedding day. 
+					</div>
+					<br>
+					<div class="text-in-dark-from-right">
+						Preparing for marriage a year to complete. To start the process, please call the Parish Office for details.
+					</div>
+				</div> 
+			 </div>		
+			<br><br><br><br>
+		</div>  
+		<!-- Communion for the HOMEBOOUND -->
+		<div id="homebound">	
+		</div>
+		<br><br><br><br><br><br>
+
+		<div class="content-65-35-box">
+			<div class="content-65-left"> 
+				<br><br>
+				<br><br>
+				<div class="section-title">
+					Communion for the Homebound
+				</div>
+				<br><br>
+
+				<div class="text">
+					We all are called to care for each other, attending particuarly to those who may be separated from us physically, ensuring that no one is separated from us spiritually.    
+				</div>
+				<br><br>
+				<div class="text">
+					It is through Holy Communion that we bring the true presence of the Lord to the sick, the aged, and the homebound.  
+				</div>
+				<br><br>
+				<div class="text">
+					If you or someone you know needs a visit from a homebound minister for this purpose, please call the parish office. 
+				</div>
+				<br><br>
+			</div>
+			
+			<div class="content-35-right"> 
+				<br><br><br><br>
+				<div class="left-aligned-photo">
+					<img src="./homebound-communion-Pexel-Cottonbro.jpg" style="width: 60%;"/>
+				</div>
+				<div class="centered-photo-mobile">
+					<img src="./homebound-communion-Pexel-Cottonbro.jpg" style="width: 60%;"/>
+				</div>
+			</div>
+			
+		</div>
+
+		<!-- ANOINTING -->
+		<div id="anointing">	
+		</div>
+		<br><br><br><br><br><br>
+		
+		<div class="dark-background-section"> 
+			<br><br><br><br>
+			<div class="section-title-centered-in-dark">
+				Anointing of the Sick
+			</div>
+			<br><br>
+
+			<div class="content-50-50-box">
+
+				<div class="content-50-left"> 
+
+					<div class="right-aligned-photo" style="text-align: right; padding-right: 100px";>
+						<img src="./anointing-iStock-1323604787.jpg" style="width: 70%;"/>
+					</div>
+							
+					<div class="centered-photo-mobile">
+						<img src="./anointing-iStock-1323604787.jpg" style="width: 85%;"/>
+					</div>
+				</div>
+						
+				<div class="content-50-right">
+					<br><br>
+					<div class="text-in-dark-from-right">
+						It is through the Sacrament of Anointing that Jesus touches the sick for spiritual healing: that with the Holy Spirit, the sick is given the gift of peace and courage to deal with the pain and suffering that accompany serious illness or the frailty of old age.
+					</div> 
+					<br><br>
+							
+					<div class="text-in-dark-from-right">
+						There is no need to wait until a person is at the point of death to receive the Sacrament of the Anointing the Sick.
+					</div>   
+    				
+				</div>
+			</div>
+			<br><br>
+			<div class="text-in-dark">
+			A family member or a friend of anyone who is facing a serious illness, or of advanced years, is encouraged to call the office to arrange for a pastoral visit.
+			</div>
+			<br><br><br><br><br>
+		</div>
+		<!-- FUNERAL-->
+		<div id="funeral">	
+		</div>
+		<br><br><br><br><br><br><br><br>
+		<div class="section-title">
+			Funeral Mass
+		</div>
+		<br><br>
+		<div class="text">
+			The loss of a loved one is a time of sadness and grief. However, in our faith there is joy in the belief that a funeral represents the passing of the beloved into eternal life -- a realization that brings great at this difficult time.
+		</div> 
+		<br><br>
+		<div class="content-65-35-box">
+			<div class="content-65-left"> 
+				<div class="text">
+					At the time of death, the funeral home is usually called first. Their staff will offer compassionate services and will call the church to schedule a funeral Mass. The funeral mass is where we gather to give praise and thanks for Christ’s victory over sin and death, to commend the deceased to God’s tender mercy and compassion, and to seek strength in this time of need.
+				</div> 
+			</div>
+			<div class="content-35-right"> 
+				<br><br>
+				<div class="left-aligned-photo">
+					<img src="./funeral-iStock-Santje09.jpg" style="width: 80%;"/>
+				</div>
+				<div class="centered-photo-mobile">
+					<img src="./funeral-iStock-Santje09.jpg" style="width: 80%;"/>
+				</div>
+			</div>	
+		</div>
+		<br><br>
+		<div class="text">
+			Beyond merely an expression of grief, the funeral mass is an act of worship.
+		</div> 
+	<br><br><br><br><br><br>
+	</main> 
+	 
+	<br>
+	<div class="church-address">
+		36 Lincoln Ave., Jamesburg, NJ | Tel. 732-521-0100
+	</div> 
+	<br>
+</body>
+<script> 
+
+
+hamburgerCharacter = "&#9776;"
+		crossCharacter = "&#10799;"
+
+		function toggleMenu() {
+			const screen = document.getElementById("screen");
+			const hamburger = document.getElementById("hamburger");
+			
+			screen.classList.toggle("active");
+			hamburger.innerHTML = screen.classList.contains("active")
+				? crossCharacter : hamburgerCharacter;
+			}
+
+
+</script>
+</html>
+
