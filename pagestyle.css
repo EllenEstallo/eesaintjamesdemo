@@ -47,6 +47,29 @@ html {
 	box-sizing: border-box;
 	flex-direction: column;
 }
+
+.content-40-60-box {
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.content-40-left {
+	flex: 35%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.content-60-right {
+	flex: 65%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	flex-direction: column;
+}
+
 .content-45-55-box {
 	width: 100%;
 	padding: 0;
