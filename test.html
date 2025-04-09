@@ -3,34 +3,84 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>NavBar with Dropdown</title>
+		<style>
+			.navbar {
+				overflow: hidden;
+				background-color: #333;
+			}
+
+			.navbar a {
+				float: left;
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+
+			.dropdown {
+				float: left;
+				overflow: hidden;
+			}
+
+			.dropdown .dropbtn {
+				cursor: pointer;
+				padding: 14px 16px;
+				background-color: #333;
+				color: white;
+				border: none;
+				outline: none;
+				font-size: 16px;
+			}
+
+			.navbar a:hover,
+			.dropdown:hover .dropbtn {
+				background-color: #555;
+			}
+
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+				z-index: 1;
+				margin-top: 5px; /* Added margin for space */
+			}
+
+			.dropdown-content a {
+				float: none;
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				text-align: left;
+			}
+
+			.dropdown-content a:hover {
+				background-color: #ddd;
+			}
+
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+		</style>
 	</head>
 	<body>
-		<embed
-			type="application/x-google-chrome-pdf"
-			src="chrome-extension://mhjfbmdgcfjbbpaeojofohoefgiehjai/35010768-83cd-4125-b4ea-56958e971e79"
-			original-url="https://stjamesthelessrc.org/wp-content/uploads/2025/03/2025march30_parish634.pdf"
-			background-color="4280821800"
-			javascript="allow"
-		/>
-
-		<!-- <object
-			data="https://stjamesthelessrc.org/wp-content/uploads/2025/03/2025march30_parish634.pdf"
-			type="application/pdf"
-			width="800"
-			height="600"
-		>
-			<p>
-				Your browser cannot display PDF files. Please download the PDF file
-				<a href="path/to/your/document.pdf">here</a>.
-			</p>''
-		</object> -->
-
-		<iframe
-			src="https://drive.google.com/file/d/1zLaWVazvEXWdR-22JuwH4B2dlkOPVDg6/view?usp=sharing"
-			width="800"
-			height="600"
-		>
-		</iframe>
+		<div class="navbar">
+			<a href="#home">Home</a>
+			<a href="#services">Services</a>
+			<div class="dropdown">
+				<button class="dropbtn">
+					More
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#about">About</a>
+					<a href="#contact">Contact</a>
+					<a href="#faq">FAQ</a>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
