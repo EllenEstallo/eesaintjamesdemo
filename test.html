@@ -3,84 +3,34 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>NavBar with Dropdown</title>
 		<style>
-			.navbar {
-				overflow: hidden;
-				background-color: #333;
-			}
-
-			.navbar a {
-				float: left;
-				display: block;
-				color: white;
-				text-align: center;
-				padding: 14px 16px;
-				text-decoration: none;
-			}
-
-			.dropdown {
-				float: left;
-				overflow: hidden;
-			}
-
-			.dropdown .dropbtn {
-				cursor: pointer;
-				padding: 14px 16px;
-				background-color: #333;
-				color: white;
-				border: none;
-				outline: none;
-				font-size: 16px;
-			}
-
-			.navbar a:hover,
-			.dropdown:hover .dropbtn {
-				background-color: #555;
-			}
-
-			.dropdown-content {
-				display: none;
-				position: absolute;
-				background-color: #f9f9f9;
-				min-width: 160px;
-				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-				z-index: 1;
-				margin-top: 5px; /* Added margin for space */
-			}
-
-			.dropdown-content a {
-				float: none;
-				color: black;
-				padding: 12px 16px;
-				text-decoration: none;
-				text-align: left;
-			}
-
-			.dropdown-content a:hover {
-				background-color: #ddd;
-			}
-
-			.dropdown:hover .dropdown-content {
-				display: block;
+			#hamburger {
+				display: flex;
+				justify-content: center; /* Center horizontally */
+				align-items: center; /* Center vertically */
+				height: 100px; /* Set your desired height */
+				width: 100px; /* Set your desired width */
+				font-size: 70px; /* Set a larger font size for both */
+				cursor: pointer; /* Show pointer on hover */
 			}
 		</style>
 	</head>
 	<body>
-		<div class="navbar">
-			<a href="#home">Home</a>
-			<a href="#services">Services</a>
-			<div class="dropdown">
-				<button class="dropbtn">
-					More
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content">
-					<a href="#about">About</a>
-					<a href="#contact">Contact</a>
-					<a href="#faq">FAQ</a>
-				</div>
-			</div>
-		</div>
+		<div id="hamburger" onclick="toggleMenu()">&#9776;</div>
+		<div id="screen" style="display: none"></div>
+
+		<script>
+			const hamburgerCharacter = "&#9776;";
+			const crossCharacter = "&#10006;"; // Using a different cross character for better alignment
+
+			function toggleMenu() {
+				const screen = document.getElementById("screen");
+				const hamburger = document.getElementById("hamburger");
+				screen.classList.toggle("active");
+				hamburger.innerHTML = screen.classList.contains("active")
+					? crossCharacter
+					: hamburgerCharacter;
+			}
+		</script>
 	</body>
 </html>

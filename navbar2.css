@@ -1,48 +1,5 @@
-/* Homepage NavBar Colors: 
-.nav-links a, .hamburger, .text-james-less {color: #f9f7e3;}
-*/
-
-/* .logo {
-	position: fixed;
-	margin-left: 7%;
-	margin-top: 30px;
-	height: 60px;
-	z-index: 10002;
-} */
-
-/* .navbar {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1000;
-	display: flex;
-	justify-content: flex-end;
-} */
-
-/* .nav-links {
-	display: flex;
-	margin-right: 50px;
-	padding-top: 20px;
-} */
-
-/* .nav-links li {
-	display: inline;
-} */
-
-/* .nav-links a {
-	text-decoration: none;
-	font: 22px "Arial";
-	letter-spacing: 0.25px;
-	margin-right: 50px;
-
-	color: #f9f7e3;
-	padding-bottom: 2px;
-	border-bottom: 2px solid transparent;
-} */
-/* .nav-links a:hover {
-	border-bottom: 2px solid #f9f7e3;
-	background-color: rgba(0, 0, 0, 0.3);
-	/* padding-left: 10px; */
+/* 
+ */
 
 .hamburger {
 	position: fixed;
@@ -52,8 +9,19 @@
 	color: #f9f7e3;
 	cursor: pointer;
 	display: none;
+	/* transform: translate(-50%, -50%); */
 }
 
+/* .hamburger {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50px;
+	color: #f9f7e3;
+	cursor: pointer;
+	display: block; /* Change this to block to ensure it's visible */
+/* } */
 .screen {
 	position: fixed;
 	top: 0;
@@ -108,43 +76,3 @@
 	color: #f9f7e3;
 	line-height: 0.8;
 }
-
-/*  */
-
-/* .dropdown {
-	position: relative;
-} */
-
-/* .dropdown-content {
-	display: none;
-	position: absolute;
-	z-index: 1;
-
-	left: 50%; */
-/* Move it to the center */
-
-/* transform: translateX(-50%); */
-/* Adjust to center it */
-/* white-space: nowrap; */
-/* text doesn't wrap to a new line; width based on contents. */
-
-/* .dropdown-content a,
-.dropdown-subcontent a {
-	text-decoration: none;
-	font: 16px "Arial";
-	letter-spacing: 0.25px;
-	display: block;
-
-	color: #f9f7e3;
-	padding-top: 10px;
-	padding-left: 0px;
-	padding-right: 20px;
-	border-bottom: 2px solid transparent; */
-/* background-color: rgba(0, 0, 0, 0.1); */
-
-/* .dropdown:hover .dropdown-content,
-.dropdown:hover .dropdown-subcontent {
-	display: block;
-	padding-right: 0px;
-	padding-top: 0px; */
-/* background-color: rgba(0, 0, 0, 0.1); */
