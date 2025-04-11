@@ -12,16 +12,6 @@
 	/* transform: translate(-50%, -50%); */
 }
 
-/* .hamburger {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 50px;
-	color: #f9f7e3;
-	cursor: pointer;
-	display: block; /* Change this to block to ensure it's visible */
-/* } */
 .screen {
 	position: fixed;
 	top: 0;

@@ -265,6 +265,7 @@ html {
 .section-title-centered-in-dark,
 .title-centered,
 .title-centered-in-dark,
+.text-centered,
 .text-centered-in-dark {
 	text-align: center;
 }
@@ -287,6 +288,9 @@ html {
 	padding-right: 100px;
 	display: block;
 }
+.bulletin {
+	display: block;
+}
 .map-desktop {
 	display: block;
 }
@@ -295,5 +299,10 @@ html {
 }
 
 .photo-mobile {
+	text-align: center;
 	display: none;
+}
+.photo-desktop {
+	text-align: center;
+	display: block;
 }
