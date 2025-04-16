@@ -7,6 +7,12 @@ body {
 	margin: 0;
 }
 
+.original-logo {
+	position: fixed;
+	margin-left: 7%;
+	margin-top: 15px;
+	height: 80px;
+}
 .logo {
 	position: fixed;
 	margin-left: 7%;
