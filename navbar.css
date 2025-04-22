@@ -1,7 +1,8 @@
 /* styles.css */
 body {
 	font-family: Arial, sans-serif;
-	background-image: url("church2 copy.jpg");
+	/* background-image: url("church2 copy.jpg"); */
+	background-image: url("church-smaller.png");
 	background-size: cover; /* Cover the entire background */
 	background-position: top center; /* Align the image to the top center */
 	margin: 0;
@@ -51,22 +52,22 @@ body {
 	position: relative; /* relative for the pseudo-element */
 }
 
-.nav-links a::after {
-	content: ""; /* Create an empty content for the pseudo-element */
+/* .nav-links a::after {
+	content: ""; /* Create an empty content for the pseudo-element *
 	display: block;
 	width: 100%;
 	height: 2px;
 	background-color: #f9f7e3;
-	/* Color of the underline */
+	/* Color of the underline *
 	position: absolute;
-	left: 0; /* Align to left */
-	bottom: -0.5px; /* Position it close to the bottom of the link */
-	visibility: hidden; /* Initially hide it */
-}
+	left: 0; /* Align to left *
+	bottom: -0.5px; /* Position it close to the bottom of the link *
+	visibility: hidden; /* Initially hide it *
+} */
 
-.nav-links a:hover::after {
+/* .nav-links a:hover::after {
 	visibility: visible;
-}
+} */
 /* Show underline on hover */
 
 /* Dropdown content styles */

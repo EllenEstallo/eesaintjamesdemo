@@ -1,10 +1,6 @@
 /* styles.css */
 body {
 	font-family: Arial, sans-serif;
-	/* background-image: url("church2 copy.jpg");  */
-	/* background-size: cover; */
-	/* background-position: top center;  */
-	/* margin: 0; */
 }
 
 .logo {
@@ -49,7 +45,7 @@ body {
 	position: relative; /* relative for the pseudo-element */
 }
 
-.page-nav-links a::after {
+/* .page-nav-links a::after {
 	content: "";
 	display: block;
 	width: 100%;
@@ -63,7 +59,7 @@ body {
 
 .page-nav-links a:hover::after {
 	visibility: visible;
-}
+} */
 
 /* Dropdown content styles */
 .dropdown-content {
