@@ -2,7 +2,7 @@
 body {
 	font-family: Arial, sans-serif;
 	/* background-image: url("church2 copy.jpg"); */
-	background-image: url("church-smaller.png");
+	background-image: url("./IMAGES/church-smaller.png");
 	background-size: cover; /* Cover the entire background */
 	background-position: top center; /* Align the image to the top center */
 	margin: 0;

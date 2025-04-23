@@ -12,7 +12,8 @@ html {
 }
 
 .background-image {
-	background-image: url("church-smaller.png");
+	background-image: url("church2.jpg");
+	/* background-color: darkslategrey; */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
